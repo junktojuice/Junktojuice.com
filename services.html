@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works & What We Take · Junk to Juice</title>
+  <meta name="description" content="How Junk to Juice works — free pickup, drop-off by appointment, and a full list of electronics we accept in central NC." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D9E75'/%3E%3Cpath d='M38 6L18 38h17l-7 20L56 26H39l7-20z' fill='white' stroke='white' stroke-width='1' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.7; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 0.5px solid #e0e0e0; flex-wrap: wrap; gap: 12px; }
+    .logo-mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-icon { width: 40px; height: 40px; border-radius: 10px; background: #1D9E75; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .logo-icon svg { width: 22px; height: 22px; }
+    .logo-text { font-size: 20px; font-weight: 500; color: #1a1a1a; }
+    .logo-text span { color: #1D9E75; }
+    .nav-links { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
+    .nav-links a { font-size: 14px; color: #555; text-decoration: none; }
+    .nav-links a:hover, .nav-links a.active { color: #1D9E75; font-weight: 500; }
+    .nav-phone { font-size: 14px; color: #1D9E75; text-decoration: none; font-weight: 500; }
+    .page-hero { padding: 3rem 2rem 2.5rem; border-bottom: 0.5px solid #e0e0e0; }
+    .page-hero .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .page-hero h1 { font-size: 30px; font-weight: 500; color: #1a1a1a; line-height: 1.25; margin-bottom: 0.75rem; }
+    .page-hero p { font-size: 15px; color: #555; max-width: 560px; line-height: 1.7; }
+    .section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; }
+    .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .section-title { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 2rem; }
+    .option-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 1.5rem; }
+    .option-card { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 1.25rem; }
+    .option-icon { width: 36px; height: 36px; border-radius: 8px; background: #E1F5EE; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+    .option-card h3 { font-size: 15px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
+    .option-card p { font-size: 13px; color: #555; line-height: 1.6; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+    .step-card { background: #f7f7f5; border-radius: 12px; padding: 1.25rem; }
+    .step-num { width: 32px; height: 32px; border-radius: 50%; background: #E1F5EE; color: #0F6E56; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; margin-bottom: 1rem; }
+    .step-card h3 { font-size: 15px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
+    .step-card p { font-size: 13px; color: #555; line-height: 1.6; }
+    .cat-label { font-size: 11px; font-weight: 500; color: #0F6E56; text-transform: uppercase; letter-spacing: 0.06em; margin: 1.5rem 0 0.75rem; }
+    .items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+    .item-chip { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #555; display: flex; align-items: center; gap: 8px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: #1D9E75; flex-shrink: 0; }
+    .notsure-section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; background: #f7f7f5; }
+    .notsure-inner { max-width: 700px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+    .notsure-text h2 { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 0.75rem; }
+    .notsure-text p { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 1.25rem; }
+    .notsure-examples { display: flex; flex-direction: column; gap: 8px; }
+    .notsure-example { font-size: 13px; color: #555; display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; }
+    .notsure-example .dot { margin-top: 5px; background: #9FE1CB; }
+    .ask-card { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 1.5rem; }
+    .ask-card p { font-size: 13px; color: #555; margin-bottom: 1rem; line-height: 1.6; }
+    .ask-textarea { width: 100%; background: #f7f7f5; border: 0.5px solid #bbb; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #1a1a1a; font-family: inherit; resize: vertical; min-height: 90px; margin-bottom: 10px; }
+    .ask-textarea:focus { outline: none; border-color: #1D9E75; }
+    .contact-input { background: #f7f7f5; border: 0.5px solid #bbb; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #1a1a1a; font-family: inherit; }
+    .contact-input:focus { outline: none; border-color: #1D9E75; }
+    .btn-primary { background: #1D9E75; color: #fff; border: none; border-radius: 8px; padding: 12px 28px; font-size: 15px; font-weight: 500; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
+    .btn-primary:hover { background: #178a65; }
+    .ask-card .btn-primary { width: 100%; text-align: center; }
+    footer { padding: 1.5rem 2rem; text-align: center; border-top: 0.5px solid #e0e0e0; }
+    footer p { font-size: 12px; color: #999; }
+    @media (max-width: 560px) { .notsure-inner { grid-template-columns: 1fr; } nav { justify-content: center; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo-mark" href="index.html">
+    <div class="logo-icon"><svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 3L7 15h7l-3 8L23 11h-7l3-8z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/></svg></div>
+    <span class="logo-text">Junk to <span>Juice</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active">How it works</a>
+    <a href="data-security.html">Data security</a>
+    <a href="faq.html">FAQ & Contact</a>
+    <a class="nav-phone" href="tel:3048931148">(304) 893-1148</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="section-label">How it works</div>
+  <h1>Two ways to get rid of it. Zero hassle.</h1>
+  <p>Pickup is always free in central NC. Drop-off by appointment. If it plugs in or has a battery, we probably want it — broken or not.</p>
+</div>
+
+<div class="section" id="how-it-works">
+  <div class="section-label">Your options</div>
+  <div class="section-title">Two ways to get rid of it</div>
+  <div class="option-cards">
+    <div class="option-card">
+      <div class="option-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 22V12h6v10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>We come to you</h3>
+      <p>Schedule a free pickup at your home or office. We haul it away — no effort on your end.</p>
+    </div>
+    <div class="option-card">
+      <div class="option-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>Drop it off</h3>
+      <p>Drop-off is available by appointment. Give us a call or send a message and we'll set a time that works — we're flexible on location for the right load.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">The process</div>
+  <div class="section-title">Simple from start to finish</div>
+  <div class="steps">
+    <div class="step-card"><div class="step-num">1</div><h3>Tell us what you have</h3><p>Send a quick message or photo. We'll confirm we can take it.</p></div>
+    <div class="step-card"><div class="step-num">2</div><h3>Pick your method</h3><p>Schedule a pickup anywhere in central NC, or arrange a drop-off by appointment — your call.</p></div>
+    <div class="step-card"><div class="step-num">3</div><h3>It gets a new life</h3><p>Working parts get reused. Everything else is responsibly recycled or reclaimed.</p></div>
+  </div>
+</div>
+
+<div class="section" id="what-we-take">
+  <div class="section-label">What we accept</div>
+  <div class="section-title">If it plugs in or has a battery, we probably want it.</div>
+  <p style="font-size:14px; color:#555; max-width:560px; line-height:1.7; margin-bottom:1.5rem;">Our scope is much broader than any list could capture. The examples below are just that — examples. When in doubt, ask.</p>
+
+  <div class="cat-label">Computers & peripherals</div>
+  <div class="items-grid">
+    <div class="item-chip"><span class="dot"></span>Laptops</div>
+    <div class="item-chip"><span class="dot"></span>Desktops & towers</div>
+    <div class="item-chip"><span class="dot"></span>Monitors</div>
+    <div class="item-chip"><span class="dot"></span>Keyboards & mice</div>
+    <div class="item-chip"><span class="dot"></span>Hard drives & SSDs</div>
+    <div class="item-chip"><span class="dot"></span>RAM & components</div>
+    <div class="item-chip"><span class="dot"></span>Cables & chargers</div>
+    <div class="item-chip"><span class="dot"></span>Printers & scanners</div>
+  </div>
+
+  <div class="cat-label">Networking & enterprise</div>
+  <div class="items-grid">
+    <div class="item-chip"><span class="dot"></span>Servers & rack gear</div>
+    <div class="item-chip"><span class="dot"></span>Switches & routers</div>
+    <div class="item-chip"><span class="dot"></span>UPS battery backups</div>
+    <div class="item-chip"><span class="dot"></span>Point of sale systems</div>
+    <div class="item-chip"><span class="dot"></span>Telecom equipment</div>
+  </div>
+
+  <div class="cat-label">Mobile & consumer</div>
+  <div class="items-grid">
+    <div class="item-chip"><span class="dot"></span>Phones & tablets</div>
+    <div class="item-chip"><span class="dot"></span>Game consoles</div>
+    <div class="item-chip"><span class="dot"></span>TVs & displays</div>
+    <div class="item-chip"><span class="dot"></span>Digital cameras</div>
+    <div class="item-chip"><span class="dot"></span>GPS devices</div>
+    <div class="item-chip"><span class="dot"></span>Smart home devices</div>
+  </div>
+
+  <div class="cat-label">Audio, visual & specialty</div>
+  <div class="items-grid">
+    <div class="item-chip"><span class="dot"></span>Amplifiers & mixers</div>
+    <div class="item-chip"><span class="dot"></span>Projectors</div>
+    <div class="item-chip"><span class="dot"></span>Test & lab equipment</div>
+    <div class="item-chip"><span class="dot"></span>Medical devices</div>
+    <div class="item-chip"><span class="dot"></span>Agricultural electronics</div>
+    <div class="item-chip"><span class="dot"></span>Industrial controllers</div>
+  </div>
+
+  <p style="font-size:12px; color:#999; margin-top:1.25rem;">Not on this list? <a href="#not-sure" style="color:#1D9E75; text-decoration:none;">Just ask →</a></p>
+</div>
+
+<!-- NOT SURE -->
+<div class="notsure-section" id="not-sure">
+  <div class="notsure-inner">
+    <div class="notsure-text">
+      <div class="section-label">Not sure?</div>
+      <h2>When in doubt, just ask</h2>
+      <p>If your item isn't on the list, don't assume we can't take it. We'd rather you reach out than toss it in the trash. Describe what you've got and we'll let you know.</p>
+      <div class="notsure-examples">
+        <div class="notsure-example"><span class="dot"></span>"I have an old piece of gym equipment with an electric display panel"</div>
+        <div class="notsure-example"><span class="dot"></span>"We're clearing out a warehouse full of mixed electronics"</div>
+        <div class="notsure-example"><span class="dot"></span>"Not sure if this old fax machine counts"</div>
+        <div class="notsure-example"><span class="dot"></span>"I have a box of random cords and parts"</div>
+      </div>
+    </div>
+    <div class="ask-card">
+      <p>Tell us what you have and we'll get back to you quickly — usually same day.</p>
+      <form id="notsure-form" action="https://formspree.io/f/xzdyrgpk" method="POST">
+        <input type="hidden" name="_subject" value="Junk to Juice – Item Question" />
+        <textarea class="ask-textarea" name="message" placeholder="Describe your item or situation..." required></textarea>
+        <input class="contact-input" type="email" name="email" placeholder="your@email.com" style="width:100%; margin-bottom:10px;" required />
+        <button type="submit" class="btn-primary" id="notsure-btn">Send my question</button>
+      </form>
+      <p id="notsure-success" style="display:none; color:#0F6E56; font-size:13px; margin-top:10px;">✓ Got it! We'll get back to you soon.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  async function handleForm(formId, btnId, successId) {
+    const form = document.getElementById(formId);
+    const btn = document.getElementById(btnId);
+    const success = document.getElementById(successId);
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      btn.disabled = true;
+      btn.textContent = 'Sending\u2026';
+      try {
+        const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+        if (res.ok) { form.style.display = 'none'; success.style.display = 'block'; }
+        else { btn.disabled = false; btn.textContent = btn.dataset.label; alert('Something went wrong. Please try again.'); }
+      } catch { btn.disabled = false; btn.textContent = btn.dataset.label; alert('Something went wrong. Please try again.'); }
+    });
+    btn.dataset.label = btn.textContent;
+  }
+  handleForm('notsure-form', 'notsure-btn', 'notsure-success');
+</script>
+
+<footer><p>Junk to Juice · Central NC · Responsibly recycling electronics one pickup at a time</p></footer>
+</body>
+</html>

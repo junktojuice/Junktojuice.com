@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Security & Business Services · Junk to Juice</title>
+  <meta name="description" content="Secure data destruction, serialized device inventory, certificates of destruction, and ESG landfill diversion reports for businesses in central NC." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D9E75'/%3E%3Cpath d='M38 6L18 38h17l-7 20L56 26H39l7-20z' fill='white' stroke='white' stroke-width='1' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.7; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 0.5px solid #e0e0e0; flex-wrap: wrap; gap: 12px; }
+    .logo-mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-icon { width: 40px; height: 40px; border-radius: 10px; background: #1D9E75; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .logo-icon svg { width: 22px; height: 22px; }
+    .logo-text { font-size: 20px; font-weight: 500; color: #1a1a1a; }
+    .logo-text span { color: #1D9E75; }
+    .nav-links { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
+    .nav-links a { font-size: 14px; color: #555; text-decoration: none; }
+    .nav-links a:hover, .nav-links a.active { color: #1D9E75; font-weight: 500; }
+    .nav-phone { font-size: 14px; color: #1D9E75; text-decoration: none; font-weight: 500; }
+    .datasec-hero { padding: 3rem 2rem 2.5rem; background: #0F1F1A; border-bottom: 0.5px solid #2A4A3E; }
+    .datasec-hero .label { font-size: 12px; font-weight: 500; color: #9FE1CB; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .datasec-hero h1 { font-size: 30px; font-weight: 500; color: #fff; line-height: 1.25; margin-bottom: 0.75rem; }
+    .datasec-hero p { font-size: 15px; color: #9FB8B0; max-width: 560px; line-height: 1.7; }
+    .datasec-section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; background: #0F1F1A; }
+    .datasec-inner { max-width: 860px; margin: 0 auto; }
+    .datasec-label { font-size: 12px; font-weight: 500; color: #9FE1CB; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .datasec-title { font-size: 22px; font-weight: 500; color: #fff; margin-bottom: 0.75rem; }
+    .datasec-sub { font-size: 14px; color: #9FB8B0; line-height: 1.7; margin-bottom: 2rem; max-width: 600px; }
+    .datasec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 2rem; }
+    .datasec-card { background: #162820; border: 0.5px solid #2A4A3E; border-radius: 12px; padding: 1.25rem; }
+    .datasec-card-icon { width: 36px; height: 36px; border-radius: 8px; background: rgba(29,158,117,0.13); display: flex; align-items: center; justify-content: center; margin-bottom: 0.75rem; font-size: 18px; }
+    .datasec-card h3 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+    .datasec-card p { font-size: 12px; color: #9FB8B0; line-height: 1.6; }
+    .datasec-pricing { background: #162820; border: 0.5px solid #1D9E75; border-radius: 12px; padding: 1.5rem; margin-top: 0.5rem; }
+    .datasec-pricing-title { font-size: 13px; font-weight: 600; color: #9FE1CB; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 1rem; }
+    .datasec-free-badge { display: inline-block; background: rgba(29,158,117,0.13); color: #9FE1CB; font-size: 11px; font-weight: 500; border-radius: 20px; padding: 3px 12px; margin-bottom: 1.5rem; border: 0.5px solid rgba(29,158,117,0.33); }
+    .datasec-pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .datasec-price-item { display: flex; flex-direction: column; gap: 4px; }
+    .datasec-price-item .price-label { font-size: 12px; color: #9FB8B0; }
+    .datasec-price-item .price-val { font-size: 18px; font-weight: 500; color: #fff; }
+    .datasec-price-item .price-note { font-size: 11px; color: #6A9990; }
+    .datasec-note { font-size: 12px; color: #6A9990; margin-top: 1rem; line-height: 1.6; }
+    .light-section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; }
+    .light-section .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .light-section .section-title { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 1.25rem; }
+    .destruction-note { background: #f7f7f5; border-left: 3px solid #1D9E75; border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; font-size: 13px; color: #444; line-height: 1.7; margin-bottom: 1rem; }
+    .destruction-note strong { color: #1a1a1a; }
+    .who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 1rem; }
+    .who-chip { background: #E1F5EE; border-radius: 8px; padding: 0.75rem 1rem; font-size: 13px; color: #0F6E56; font-weight: 500; }
+    .contact-cta { text-align: center; padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; }
+    .contact-cta h2 { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 0.75rem; }
+    .contact-cta p { font-size: 14px; color: #555; margin-bottom: 1.5rem; }
+    .btn-primary { background: #1D9E75; color: #fff; border: none; border-radius: 8px; padding: 12px 28px; font-size: 15px; font-weight: 500; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
+    .btn-primary:hover { background: #178a65; }
+    .btn-secondary { background: transparent; color: #1a1a1a; border: 0.5px solid #bbb; border-radius: 8px; padding: 12px 28px; font-size: 15px; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; margin-left: 12px; }
+    .btn-secondary:hover { background: #f5f5f5; }
+    footer { padding: 1.5rem 2rem; text-align: center; border-top: 0.5px solid #e0e0e0; }
+    footer p { font-size: 12px; color: #999; }
+    @media (max-width: 560px) { nav { justify-content: center; } .btn-secondary { margin-left: 0; margin-top: 8px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo-mark" href="index.html">
+    <div class="logo-icon"><svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 3L7 15h7l-3 8L23 11h-7l3-8z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/></svg></div>
+    <span class="logo-text">Junk to <span>Juice</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">How it works</a>
+    <a href="data-security.html" class="active">Data security</a>
+    <a href="faq.html">FAQ & Contact</a>
+    <a class="nav-phone" href="tel:3048931148">(304) 893-1148</a>
+  </div>
+</nav>
+
+<div class="datasec-hero">
+  <div class="label">For businesses & organizations</div>
+  <h1>Your data doesn't leave with your hardware.</h1>
+  <p>Every storage device we collect is treated as if it still contains sensitive information. We don't just delete files — we use methods that make data unrecoverable before anything is processed.</p>
+</div>
+
+<div class="datasec-section" id="data-security">
+  <div class="datasec-inner">
+    <div class="datasec-grid">
+      <div class="datasec-card">
+        <div class="datasec-card-icon">🔒</div>
+        <h3>Secure Data Destruction</h3>
+        <p>Storage media is securely wiped using DoD-grade software or physically destroyed — drives drilled or shredded. You choose the method. Either way, the data is gone for good.</p>
+      </div>
+      <div class="datasec-card">
+        <div class="datasec-card-icon">📋</div>
+        <h3>Serialized Inventory</h3>
+        <p>Every device is logged by make, model, and serial number before it leaves your hands. You get a full itemized record — useful for IT asset tracking and internal audits.</p>
+      </div>
+      <div class="datasec-card">
+        <div class="datasec-card-icon">📄</div>
+        <h3>Certificate of Destruction</h3>
+        <p>A signed certificate documenting what was collected, how data was destroyed, and where material was processed. Accepted for HIPAA, PCI-DSS, and internal IT compliance.</p>
+      </div>
+      <div class="datasec-card">
+        <div class="datasec-card-icon">🌱</div>
+        <h3>Landfill Diversion Report</h3>
+        <p>For organizations with sustainability goals — estimated pounds kept out of landfill and CO₂ equivalent avoided, suitable for ESG and sustainability reporting.</p>
+      </div>
+    </div>
+
+    <div class="datasec-pricing">
+      <div class="datasec-pricing-title">Business Service Pricing</div>
+      <div class="datasec-free-badge">✓ Basic pickup is always free</div>
+      <div class="datasec-pricing-grid">
+        <div class="datasec-price-item">
+          <span class="price-label">Pickup + recycling</span>
+          <span class="price-val">Free</span>
+          <span class="price-note">All sizes, central NC</span>
+        </div>
+        <div class="datasec-price-item">
+          <span class="price-label">Serialized inventory</span>
+          <span class="price-val">Free</span>
+          <span class="price-note">Included with every commercial job</span>
+        </div>
+        <div class="datasec-price-item">
+          <span class="price-label">Data wipe + certificate</span>
+          <span class="price-val">$10–15 / device</span>
+          <span class="price-note">Per storage device (HDD, SSD, phone)</span>
+        </div>
+        <div class="datasec-price-item">
+          <span class="price-label">Physical destruction</span>
+          <span class="price-val">$15–20 / device</span>
+          <span class="price-note">Drive drilled/shredded, with certificate</span>
+        </div>
+        <div class="datasec-price-item">
+          <span class="price-label">Landfill diversion report</span>
+          <span class="price-val">Free</span>
+          <span class="price-note">On request, for ESG reporting</span>
+        </div>
+        <div class="datasec-price-item">
+          <span class="price-label">Bulk / office cleanout</span>
+          <span class="price-val">Contact us</span>
+          <span class="price-note">Custom quote for large jobs</span>
+        </div>
+      </div>
+      <p class="datasec-note">All material is processed through responsible downstream recycling. Documentation of the recycling chain is available on request. For large-volume or high-compliance jobs — server rooms, data centers, medical facilities — get in touch and we'll work out the details.</p>
+    </div>
+  </div>
+</div>
+
+<div class="light-section">
+  <div class="section-label">Important to know</div>
+  <div class="section-title">What "physical destruction" means</div>
+  <div class="destruction-note">
+    <strong>Physical destruction applies specifically to storage media</strong> — hard drives, SSDs, flash memory chips, and the storage inside phones and tablets. The drive is drilled through or physically shredded, making data unrecoverable by any means. The rest of the device (circuit boards, plastics, metals, display) is recycled normally — we're not destroying the whole laptop, just the part that holds data.
+  </div>
+  <div class="destruction-note">
+    <strong>Software wipe</strong> uses DoD 5220.22-M compliant overwriting tools (DBAN, Eraser) that overwrite all sectors of a drive multiple times. This is sufficient for most business compliance needs. Physical destruction is recommended for highly sensitive environments like healthcare, legal, and financial services.
+  </div>
+</div>
+
+<div class="light-section">
+  <div class="section-label">Who this is for</div>
+  <div class="section-title">Businesses that need more than just pickup</div>
+  <div class="who-grid">
+    <div class="who-chip">🏥 Medical & dental offices</div>
+    <div class="who-chip">⚖️ Law firms</div>
+    <div class="who-chip">🏦 Banks & financial services</div>
+    <div class="who-chip">🏭 Manufacturing with IT departments</div>
+    <div class="who-chip">🏛 Government & education</div>
+    <div class="who-chip">🌱 Companies with ESG commitments</div>
+    <div class="who-chip">💼 HR & staffing firms</div>
+    <div class="who-chip">🖥 Any office doing a tech refresh</div>
+  </div>
+</div>
+
+<div class="contact-cta">
+  <h2>Ready to talk through your situation?</h2>
+  <p>Every job is a little different. Give us a call or send an email and we'll figure out the right approach together.</p>
+  <a class="btn-primary" href="faq.html#contact">Get in touch</a>
+  <a class="btn-secondary" href="tel:3048931148">Call (304) 893-1148</a>
+</div>
+
+<footer><p>Junk to Juice · Central NC · Responsibly recycling electronics one pickup at a time</p></footer>
+</body>
+</html>

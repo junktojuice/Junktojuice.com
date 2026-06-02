@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Junk to Juice · Central NC E-Waste Recycling</title>
+  <meta name="description" content="Free e-waste pickup and drop-off serving Sanford, Harnett County, the Triangle (Raleigh, Durham, Chapel Hill), Fayetteville, and all of central NC." />
+  <link rel="canonical" href="https://junktojuice.com/" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D9E75'/%3E%3Cpath d='M38 6L18 38h17l-7 20L56 26H39l7-20z' fill='white' stroke='white' stroke-width='1' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.7; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 0.5px solid #e0e0e0; flex-wrap: wrap; gap: 12px; }
+    .logo-mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-icon { width: 40px; height: 40px; border-radius: 10px; background: #1D9E75; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .logo-icon svg { width: 22px; height: 22px; }
+    .logo-text { font-size: 20px; font-weight: 500; color: #1a1a1a; }
+    .logo-text span { color: #1D9E75; }
+    .nav-links { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
+    .nav-links a { font-size: 14px; color: #555; text-decoration: none; }
+    .nav-links a:hover, .nav-links a.active { color: #1D9E75; font-weight: 500; }
+    .nav-phone { font-size: 14px; color: #1D9E75; text-decoration: none; font-weight: 500; }
+    .hero { padding: 4.5rem 2rem 3.5rem; text-align: center; border-bottom: 0.5px solid #e0e0e0; }
+    .badge { display: inline-block; background: #E1F5EE; color: #0F6E56; font-size: 12px; font-weight: 500; border-radius: 20px; padding: 4px 14px; margin-bottom: 1.25rem; }
+    .hero h1 { font-size: 38px; font-weight: 500; color: #1a1a1a; line-height: 1.2; margin-bottom: 1rem; max-width: 580px; margin-left: auto; margin-right: auto; }
+    .hero p { font-size: 16px; color: #555; max-width: 480px; margin: 0 auto 2rem; line-height: 1.7; }
+    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: #1D9E75; color: #fff; border: none; border-radius: 8px; padding: 12px 28px; font-size: 15px; font-weight: 500; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
+    .btn-primary:hover { background: #178a65; }
+    .btn-secondary { background: transparent; color: #1a1a1a; border: 0.5px solid #bbb; border-radius: 8px; padding: 12px 28px; font-size: 15px; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
+    .btn-secondary:hover { background: #f5f5f5; }
+    .section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; }
+    .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .section-title { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 2rem; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+    .step-card { background: #f7f7f5; border-radius: 12px; padding: 1.25rem; }
+    .step-num { width: 32px; height: 32px; border-radius: 50%; background: #E1F5EE; color: #0F6E56; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; margin-bottom: 1rem; }
+    .step-card h3 { font-size: 15px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
+    .step-card p { font-size: 13px; color: #555; line-height: 1.6; }
+    .page-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin-top: 1.5rem; }
+    .page-card { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 1.5rem; text-decoration: none; color: inherit; transition: border-color 0.15s, box-shadow 0.15s; display: block; }
+    .page-card:hover { border-color: #1D9E75; box-shadow: 0 2px 12px rgba(29,158,117,0.1); }
+    .page-card-icon { font-size: 24px; margin-bottom: 0.75rem; }
+    .page-card h3 { font-size: 15px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
+    .page-card p { font-size: 13px; color: #555; line-height: 1.6; }
+    .page-card .arrow { font-size: 13px; color: #1D9E75; margin-top: 0.75rem; display: block; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 1.5rem; }
+    .stat-card { background: #f7f7f5; border-radius: 8px; padding: 1rem; text-align: center; }
+    .stat-num { font-size: 26px; font-weight: 500; color: #1D9E75; }
+    .stat-label { font-size: 12px; color: #555; margin-top: 4px; line-height: 1.4; }
+    .contact-card { background: #f7f7f5; border-radius: 12px; padding: 2rem; max-width: 480px; margin: 1.5rem auto 0; }
+    .contact-card p { font-size: 14px; color: #555; margin-bottom: 1.25rem; line-height: 1.7; }
+    .contact-row { display: flex; gap: 10px; }
+    .contact-input { flex: 1; background: #fff; border: 0.5px solid #bbb; border-radius: 8px; padding: 10px 14px; font-size: 14px; color: #1a1a1a; font-family: inherit; }
+    .contact-input:focus { outline: none; border-color: #1D9E75; }
+    footer { padding: 1.5rem 2rem; text-align: center; border-top: 0.5px solid #e0e0e0; }
+    footer p { font-size: 12px; color: #999; }
+    @media (max-width: 560px) { .hero h1 { font-size: 28px; } .contact-row { flex-direction: column; } nav { justify-content: center; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="logo-mark" href="index.html">
+    <div class="logo-icon"><svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 3L7 15h7l-3 8L23 11h-7l3-8z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/></svg></div>
+    <span class="logo-text">Junk to <span>Juice</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="services.html">How it works</a>
+    <a href="data-security.html">Data security</a>
+    <a href="faq.html">FAQ & Contact</a>
+    <a class="nav-phone" href="tel:3048931148">(304) 893-1148</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="badge">Central NC · Triangle · Fayetteville · Free pickup available</div>
+  <h1>Your old electronics deserve a second life</h1>
+  <p>We collect your e-waste, keep what can be saved, and responsibly recycle the rest. Good for your home, good for the planet.</p>
+  <div class="cta-row">
+    <a class="btn-primary" href="faq.html#contact">Schedule a pickup</a>
+    <a class="btn-secondary" href="tel:3048931148">Call (304) 893-1148</a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">How it works</div>
+  <div class="section-title">Simple from start to finish</div>
+  <div class="steps">
+    <div class="step-card"><div class="step-num">1</div><h3>Tell us what you have</h3><p>Send a quick message or photo. We'll confirm we can take it.</p></div>
+    <div class="step-card"><div class="step-num">2</div><h3>Pick your method</h3><p>Schedule a free pickup anywhere in central NC, or arrange a drop-off by appointment — your call.</p></div>
+    <div class="step-card"><div class="step-num">3</div><h3>It gets a new life</h3><p>Working parts get reused. Everything else is responsibly recycled or reclaimed.</p></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Explore</div>
+  <div class="section-title">Everything we offer</div>
+  <div class="page-cards">
+    <a class="page-card" href="services.html">
+      <div class="page-card-icon">♻️</div>
+      <h3>How it works & What we take</h3>
+      <p>Pickup, drop-off, and the full list of electronics we accept — computers, phones, servers, TVs and more.</p>
+      <span class="arrow">View details →</span>
+    </a>
+    <a class="page-card" href="data-security.html">
+      <div class="page-card-icon">🔒</div>
+      <h3>Data Security & Business Services</h3>
+      <p>Secure data destruction, serialized inventory, certificates of destruction, and ESG reporting.</p>
+      <span class="arrow">View details →</span>
+    </a>
+    <a class="page-card" href="faq.html">
+      <div class="page-card-icon">💬</div>
+      <h3>FAQ & Contact</h3>
+      <p>Common questions answered. Schedule a pickup, arrange a drop-off, or ask about your specific item.</p>
+      <span class="arrow">View details →</span>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">Why it matters</div>
+  <div class="section-title">E-waste is the world's fastest growing waste stream</div>
+  <div class="stats">
+    <div class="stat-card"><div class="stat-num">50M+</div><div class="stat-label">tons of e-waste generated globally each year</div></div>
+    <div class="stat-card"><div class="stat-num">20%</div><div class="stat-label">of e-waste is formally recycled worldwide</div></div>
+    <div class="stat-card"><div class="stat-num">$62B</div><div class="stat-label">in precious metals discarded annually</div></div>
+  </div>
+</div>
+
+<div class="section" id="contact" style="text-align:center;">
+  <div class="section-label">Get started</div>
+  <div class="section-title">Ready to clear the clutter?</div>
+  <div class="contact-card">
+    <p>Drop your email and we'll reach out to schedule a pickup or arrange a drop-off. Serving central NC — the Triangle, Fayetteville, Sanford, and everywhere in between.</p>
+    <form id="contact-form" action="https://formspree.io/f/xzdyrgpk" method="POST">
+      <input type="hidden" name="_subject" value="Junk to Juice – Pickup Request" />
+      <div class="contact-row">
+        <input class="contact-input" type="email" name="email" placeholder="your@email.com" required />
+        <button type="submit" class="btn-primary" id="contact-btn" style="white-space:nowrap;">Get in touch</button>
+      </div>
+    </form>
+    <p id="contact-success" style="display:none; color:#0F6E56; font-size:14px; margin-top:12px;">✓ Thanks! We'll be in touch soon.</p>
+    <p style="margin-top:1rem; font-size:13px; color:#888;">Prefer to call? <a href="tel:3048931148" style="color:#1D9E75; text-decoration:none; font-weight:500;">(304) 893-1148</a></p>
+  </div>
+</div>
+
+<script>
+  async function handleForm(formId, btnId, successId) {
+    const form = document.getElementById(formId);
+    const btn = document.getElementById(btnId);
+    const success = document.getElementById(successId);
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      btn.disabled = true;
+      btn.textContent = 'Sending\u2026';
+      try {
+        const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+        if (res.ok) { form.style.display = 'none'; success.style.display = 'block'; }
+        else { btn.disabled = false; btn.textContent = btn.dataset.label; alert('Something went wrong. Please try again.'); }
+      } catch { btn.disabled = false; btn.textContent = btn.dataset.label; alert('Something went wrong. Please try again.'); }
+    });
+    btn.dataset.label = btn.textContent;
+  }
+  handleForm('contact-form', 'contact-btn', 'contact-success');
+</script>
+
+<footer><p>Junk to Juice · Central NC · Responsibly recycling electronics one pickup at a time</p></footer>
+</body>
+</html>
