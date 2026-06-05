@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Asset Recovery & Paid Acquisition · Junk to Juice</title>
+  <meta name="description" content="Junk to Juice buys retired IT equipment from businesses in central NC. Photo manifest pricing, certified data destruction, and certificates of destruction included." />
+  <link rel="canonical" href="https://junktojuice.com/itad.html" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D9E75'/%3E%3Cpath d='M38 6L18 38h17l-7 20L56 26H39l7-20z' fill='white' stroke='white' stroke-width='1' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.7; }
+
+    /* ── NAV ── */
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 0.5px solid #e0e0e0; flex-wrap: wrap; gap: 12px; }
+    .logo-mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-icon { width: 40px; height: 40px; border-radius: 10px; background: #1D9E75; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .logo-icon svg { width: 22px; height: 22px; }
+    .logo-text { font-size: 20px; font-weight: 500; color: #1a1a1a; }
+    .logo-text span { color: #1D9E75; }
+    .nav-links { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
+    .nav-links a { font-size: 14px; color: #555; text-decoration: none; }
+    .nav-links a:hover, .nav-links a.active { color: #1D9E75; font-weight: 500; }
+    .nav-phone { font-size: 14px; color: #1D9E75; text-decoration: none; font-weight: 500; }
+
+    /* ── HERO ── */
+    .itad-hero { padding: 3.5rem 2rem 3rem; background: #0F1F1A; border-bottom: 0.5px solid #2A4A3E; }
+    .itad-hero .label { font-size: 12px; font-weight: 500; color: #9FE1CB; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .itad-hero h1 { font-size: 32px; font-weight: 500; color: #fff; line-height: 1.2; margin-bottom: 1rem; max-width: 600px; }
+    .itad-hero h1 em { font-style: normal; color: #1D9E75; }
+    .itad-hero p { font-size: 15px; color: #9FB8B0; max-width: 540px; line-height: 1.7; margin-bottom: 2rem; }
+    .hero-cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary { background: #1D9E75; color: #fff; border: none; border-radius: 8px; padding: 12px 28px; font-size: 15px; font-weight: 500; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
+    .btn-primary:hover { background: #178a65; }
+    .btn-ghost { background: transparent; color: #9FE1CB; border: 0.5px solid #2A4A3E; border-radius: 8px; padding: 12px 28px; font-size: 15px; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
+    .btn-ghost:hover { border-color: #1D9E75; }
+    .hero-chips { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 2rem; }
+    .hero-chip { background: rgba(29,158,117,0.10); border: 0.5px solid rgba(29,158,117,0.25); border-radius: 20px; padding: 4px 14px; font-size: 12px; color: #9FE1CB; }
+
+    /* ── SHARED SECTION CHROME ── */
+    .section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; }
+    .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+    .section-title { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 1.25rem; }
+    .section-sub { font-size: 14px; color: #555; max-width: 560px; line-height: 1.7; margin-bottom: 2rem; }
+
+    /* ── WHO THIS IS FOR ── */
+    .who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+    .who-card { background: #f7f7f5; border-radius: 10px; padding: 1rem 1.25rem; display: flex; align-items: flex-start; gap: 10px; }
+    .who-card .icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+    .who-card-text h4 { font-size: 14px; font-weight: 500; color: #1a1a1a; margin-bottom: 2px; }
+    .who-card-text p { font-size: 12px; color: #666; line-height: 1.5; }
+
+    /* ── HOW IT WORKS (PAID) ── */
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .step-card { background: #f7f7f5; border-radius: 12px; padding: 1.25rem; }
+    .step-num { width: 32px; height: 32px; border-radius: 50%; background: #E1F5EE; color: #0F6E56; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; margin-bottom: 1rem; }
+    .step-card h3 { font-size: 15px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
+    .step-card p { font-size: 13px; color: #555; line-height: 1.6; }
+
+    /* ── GRADING TABLE ── */
+    .grade-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 1.5rem; }
+    .grade-card { border-radius: 10px; padding: 1.25rem; border: 0.5px solid #e0e0e0; }
+    .grade-card.grade-a { border-top: 3px solid #1D9E75; }
+    .grade-card.grade-b { border-top: 3px solid #6EC6A8; }
+    .grade-card.grade-c { border-top: 3px solid #9FB8B0; }
+    .grade-card.grade-scrap { border-top: 3px solid #ccc; }
+    .grade-badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; border-radius: 4px; padding: 2px 8px; margin-bottom: 0.75rem; }
+    .grade-a .grade-badge { background: #E1F5EE; color: #0F6E56; }
+    .grade-b .grade-badge { background: #E8F7F2; color: #1D9E75; }
+    .grade-c .grade-badge { background: #f0f0f0; color: #555; }
+    .grade-scrap .grade-badge { background: #f5f5f5; color: #888; }
+    .grade-card h4 { font-size: 14px; font-weight: 500; color: #1a1a1a; margin-bottom: 4px; }
+    .grade-card p { font-size: 12px; color: #666; line-height: 1.5; }
+    .grade-card .grade-val { font-size: 13px; font-weight: 500; color: #1D9E75; margin-top: 8px; }
+    .grade-scrap .grade-val { color: #888; }
+
+    /* ── PROTECTIONS CALLOUT ── */
+    .protect-section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; background: #f7f7f5; }
+    .protect-inner { max-width: 720px; margin: 0 auto; }
+    .protect-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 1.5rem; }
+    .protect-card { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; }
+    .protect-card .p-icon { font-size: 20px; margin-bottom: 0.5rem; }
+    .protect-card h4 { font-size: 14px; font-weight: 500; color: #1a1a1a; margin-bottom: 4px; }
+    .protect-card p { font-size: 12px; color: #555; line-height: 1.5; }
+
+    /* ── WHAT WE BUY ── */
+    .buys-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; margin-top: 1rem; }
+    .buy-chip { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #555; display: flex; align-items: center; gap: 8px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: #1D9E75; flex-shrink: 0; }
+    .no-chip { background: #fff8f8; border: 0.5px solid #f0d8d8; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #a05555; display: flex; align-items: center; gap: 8px; }
+    .no-dot { width: 7px; height: 7px; border-radius: 50%; background: #c77; flex-shrink: 0; }
+    .cat-label { font-size: 11px; font-weight: 500; color: #0F6E56; text-transform: uppercase; letter-spacing: 0.06em; margin: 1.5rem 0 0.75rem; }
+    .cat-label-avoid { font-size: 11px; font-weight: 500; color: #a05555; text-transform: uppercase; letter-spacing: 0.06em; margin: 1.5rem 0 0.75rem; }
+
+    /* ── INQUIRY FORM ── */
+    .inquiry-section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; }
+    .inquiry-inner { max-width: 680px; margin: 0 auto; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 1.5rem; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group.full { grid-column: 1 / -1; }
+    .form-label { font-size: 12px; font-weight: 500; color: #444; }
+    .form-input { background: #f7f7f5; border: 0.5px solid #ccc; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #1a1a1a; font-family: inherit; }
+    .form-input:focus { outline: none; border-color: #1D9E75; background: #fff; }
+    textarea.form-input { resize: vertical; min-height: 100px; }
+    select.form-input { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 32px; }
+    .form-note { font-size: 12px; color: #888; margin-top: 0.75rem; line-height: 1.6; }
+    .form-submit-row { margin-top: 1.25rem; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    #inquiry-success { display: none; color: #0F6E56; font-size: 14px; }
+
+    /* ── FAQ ── */
+    .faq-list { display: flex; flex-direction: column; border: 0.5px solid #e0e0e0; border-radius: 12px; overflow: hidden; margin-top: 1.5rem; }
+    .faq-item { border-bottom: 0.5px solid #e0e0e0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { width: 100%; background: #fff; border: none; padding: 1rem 1.25rem; font-size: 14px; font-weight: 500; color: #1a1a1a; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-family: inherit; }
+    .faq-q:hover { background: #fafafa; }
+    .faq-icon { width: 20px; height: 20px; border-radius: 50%; background: #E1F5EE; color: #0F6E56; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; line-height: 1; transition: transform 0.2s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 1.25rem 1rem; font-size: 13px; color: #555; line-height: 1.7; background: #fff; }
+    .faq-item.open .faq-a { display: block; }
+
+    footer { padding: 1.5rem 2rem; text-align: center; border-top: 0.5px solid #e0e0e0; }
+    footer p { font-size: 12px; color: #999; }
+
+    @media (max-width: 560px) {
+      nav { justify-content: center; }
+      .itad-hero h1 { font-size: 26px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .hero-cta-row { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="logo-mark" href="index.html">
+    <div class="logo-icon"><svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 3L7 15h7l-3 8L23 11h-7l3-8z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/></svg></div>
+    <span class="logo-text">Junk to <span>Juice</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="services.html">How it works</a>
+    <a href="data-security.html">Data security</a>
+    <a href="itad.html" class="active">Asset recovery</a>
+    <a href="faq.html">FAQ & Contact</a>
+    <a class="nav-phone" href="tel:9193463172">(919) 346-3172</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="itad-hero">
+  <div class="label">IT Asset Recovery · Paid Acquisition</div>
+  <h1>Your retired IT assets have <em>residual value.</em><br>We'll pay you for them.</h1>
+  <p>When your organization retires servers, laptops, or networking gear, the best hardware doesn't belong in a recycler's bin — it belongs back in the market. We assess, grade, and pay for equipment that has resale value, and responsibly recycle the rest.</p>
+  <div class="hero-cta-row">
+    <a class="btn-primary" href="#inquiry">Request an asset assessment</a>
+    <a class="btn-ghost" href="tel:9193463172">Call (919) 346-3172</a>
+  </div>
+  <div class="hero-chips">
+    <span class="hero-chip">Photo manifest pricing — no surprises</span>
+    <span class="hero-chip">NCDEQ Certified</span>
+    <span class="hero-chip">Certificate of destruction included</span>
+    <span class="hero-chip">Central NC · Triangle · Fayetteville</span>
+  </div>
+</div>
+
+<!-- WHO THIS IS FOR -->
+<div class="section">
+  <div class="section-label">Who this is for</div>
+  <div class="section-title">Organizations with real volume</div>
+  <div class="section-sub">Free pickup works great for individuals and small offices. For organizations retiring meaningful quantities of IT equipment, paid acquisition means you get value back — not just compliance paperwork.</div>
+  <div class="who-grid">
+    <div class="who-card">
+      <div class="icon">🏥</div>
+      <div class="who-card-text">
+        <h4>Hospitals & health systems</h4>
+        <p>Regular device refresh cycles. HIPAA data destruction required. Certificate of destruction standard.</p>
+      </div>
+    </div>
+    <div class="who-card">
+      <div class="icon">⚖️</div>
+      <div class="who-card-text">
+        <h4>Law firms</h4>
+        <p>Client confidentiality obligations. Physical destruction often preferred. Serialized chain-of-custody documentation.</p>
+      </div>
+    </div>
+    <div class="who-card">
+      <div class="icon">🎓</div>
+      <div class="who-card-text">
+        <h4>Universities & schools</h4>
+        <p>End-of-lease and annual refresh programs. Large volumes, mixed grades, ESG reporting interest.</p>
+      </div>
+    </div>
+    <div class="who-card">
+      <div class="icon">🏦</div>
+      <div class="who-card-text">
+        <h4>Banks & financial services</h4>
+        <p>Regulatory data security requirements. Documented destruction chain from pickup to processing.</p>
+      </div>
+    </div>
+    <div class="who-card">
+      <div class="icon">🏭</div>
+      <div class="who-card-text">
+        <h4>Manufacturing & enterprise</h4>
+        <p>IT department refreshes, data center decommissions, and warehouse cleanouts — all handled in one trip.</p>
+      </div>
+    </div>
+    <div class="who-card">
+      <div class="icon">🏛</div>
+      <div class="who-card-text">
+        <h4>Government & municipalities</h4>
+        <p>Surplus IT equipment with compliance requirements. NCDEQ certification supports procurement documentation.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="section">
+  <div class="section-label">The process</div>
+  <div class="section-title">How paid acquisition works</div>
+  <div class="section-sub">We built this process to protect both sides. You know what you're getting before we pick anything up.</div>
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <h3>Submit a photo manifest</h3>
+      <p>Send us photos and a rough inventory — make, model, condition, quantity. You don't need a perfect spreadsheet, just enough for us to price honestly.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <h3>We provide a tiered quote</h3>
+      <p>We'll give you a range by grade (A/B/C/scrap) based on the manifest. You'll know your floor and ceiling before we ever show up.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <h3>On-site grading & sight adjustment</h3>
+      <p>When we arrive, we physically assess and grade each device. If the actual condition differs significantly from the manifest, we discuss it before finalizing — no surprises at pickup.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <h3>Payment + documentation</h3>
+      <p>Payment for qualified equipment, certificate of destruction for data-bearing devices, serialized inventory, and landfill diversion report — all in one transaction.</p>
+    </div>
+  </div>
+</div>
+
+<!-- GRADING SYSTEM -->
+<div class="section">
+  <div class="section-label">How we grade</div>
+  <div class="section-title">Four tiers. Priced honestly.</div>
+  <div class="section-sub">Every device gets assessed against these criteria on-site. Tier determines what we pay — or whether the item becomes a recycling-only piece with no charge to you.</div>
+  <div class="grade-grid">
+    <div class="grade-card grade-a">
+      <span class="grade-badge">Grade A</span>
+      <h4>Resale-ready</h4>
+      <p>Powers on, no major cosmetic damage, all components present. Likely candidate for direct resale or refurbishment.</p>
+      <div class="grade-val">Highest payout</div>
+    </div>
+    <div class="grade-card grade-b">
+      <span class="grade-badge">Grade B</span>
+      <h4>Functional with flaws</h4>
+      <p>Powers on and functional, but cosmetic damage, missing accessories, or wear that reduces resale value. Still has positive value.</p>
+      <div class="grade-val">Moderate payout</div>
+    </div>
+    <div class="grade-card grade-c">
+      <span class="grade-badge">Grade C</span>
+      <h4>Parts / low value</h4>
+      <p>Functional components but limited as a complete unit. May have value for parts. Payout depends heavily on make and model.</p>
+      <div class="grade-val">Low / case-by-case payout</div>
+    </div>
+    <div class="grade-card grade-scrap">
+      <span class="grade-badge">Scrap</span>
+      <h4>Material value only</h4>
+      <p>Non-functional, heavily damaged, or obsolete. Value comes from metals and materials only. Recycled at no cost to you.</p>
+      <div class="grade-val">Recycled free — no charge</div>
+    </div>
+  </div>
+</div>
+
+<!-- PROTECTIONS -->
+<div class="protect-section">
+  <div class="protect-inner">
+    <div class="section-label">Built-in protections</div>
+    <div class="section-title">How we keep the deal fair for both sides</div>
+    <div class="section-sub">Paying for equipment means taking on risk. These are the structures we use to make sure neither party gets burned.</div>
+    <div class="protect-grid">
+      <div class="protect-card">
+        <div class="p-icon">📸</div>
+        <h4>Photo manifest first</h4>
+        <p>We never commit a price without seeing what you have. Photos and a rough list come before any quote.</p>
+      </div>
+      <div class="protect-card">
+        <div class="p-icon">🔍</div>
+        <h4>Sight-adjustment clause</h4>
+        <p>If the on-site condition meaningfully differs from the manifest, we discuss before finalizing. No one is locked into a bad deal.</p>
+      </div>
+      <div class="protect-card">
+        <div class="p-icon">💰</div>
+        <h4>Capped exposure per deal</h4>
+        <p>For new relationships, we cap total acquisition spend per transaction until we've established trust with your inventory quality.</p>
+      </div>
+      <div class="protect-card">
+        <div class="p-icon">📊</div>
+        <h4>Floor price awareness</h4>
+        <p>Our quotes are anchored to real resale and scrap market prices — we don't speculate, and we're transparent about what drives the number.</p>
+      </div>
+      <div class="protect-card">
+        <div class="p-icon">🚫</div>
+        <h4>Disposal-cost items excluded</h4>
+        <p>CRTs, certain batteries, and high-hazmat items don't qualify for paid acquisition — these cost money to process and we'll tell you upfront.</p>
+      </div>
+      <div class="protect-card">
+        <div class="p-icon">📋</div>
+        <h4>Full chain-of-custody docs</h4>
+        <p>Certificate of destruction, serialized inventory, and ESG diversion report included — regardless of whether we paid or recycled free.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT WE BUY / AVOID -->
+<div class="section">
+  <div class="section-label">Equipment guide</div>
+  <div class="section-title">What tends to have value vs. what doesn't</div>
+  <div class="section-sub">This isn't a hard rule — condition and age matter as much as category. But it's a useful starting point for setting expectations before you reach out.</div>
+
+  <div class="cat-label">Strong paid acquisition candidates</div>
+  <div class="buys-grid">
+    <div class="buy-chip"><span class="dot"></span>Laptops (last 5–7 yrs)</div>
+    <div class="buy-chip"><span class="dot"></span>Workstations</div>
+    <div class="buy-chip"><span class="dot"></span>Rack servers</div>
+    <div class="buy-chip"><span class="dot"></span>Networking (Cisco, HP, etc.)</div>
+    <div class="buy-chip"><span class="dot"></span>SSDs & RAM modules</div>
+    <div class="buy-chip"><span class="dot"></span>Enterprise storage arrays</div>
+    <div class="buy-chip"><span class="dot"></span>Phones (recent models)</div>
+    <div class="buy-chip"><span class="dot"></span>Tablets (iPad, Surface)</div>
+    <div class="buy-chip"><span class="dot"></span>Test & measurement gear</div>
+    <div class="buy-chip"><span class="dot"></span>Managed switches</div>
+  </div>
+
+  <div class="cat-label-avoid">Free recycling only — no payout</div>
+  <div class="buys-grid">
+    <div class="no-chip"><span class="no-dot"></span>CRT monitors & TVs</div>
+    <div class="no-chip"><span class="no-dot"></span>Pre-2010 desktops</div>
+    <div class="no-chip"><span class="no-dot"></span>Toner/inkjet printers</div>
+    <div class="no-chip"><span class="no-dot"></span>Broken/water-damaged units</div>
+    <div class="no-chip"><span class="no-dot"></span>Heavily swollen batteries</div>
+  </div>
+  <p style="font-size:12px; color:#999; margin-top:1rem;">The "free recycling only" items are still accepted — we just won't pay for them. They cost more to process than they're worth at market. No disposal fee to you.</p>
+</div>
+
+<!-- INQUIRY FORM -->
+<div class="inquiry-section" id="inquiry">
+  <div class="inquiry-inner">
+    <div class="section-label">Get started</div>
+    <div class="section-title">Request an asset assessment</div>
+    <div class="section-sub">Tell us what you have. The more detail you can provide — make, model, quantity, rough condition — the more accurate a preliminary quote we can give before any site visit.</div>
+
+    <form id="inquiry-form" action="https://formspree.io/f/xzdyrgpk" method="POST">
+      <input type="hidden" name="_subject" value="Junk to Juice – ITAD / Asset Acquisition Inquiry" />
+      <div class="form-grid">
+        <div class="form-group">
+          <label class="form-label" for="org-name">Organization name</label>
+          <input class="form-input" type="text" id="org-name" name="organization" placeholder="Acme Health System" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-name">Your name</label>
+          <input class="form-input" type="text" id="contact-name" name="name" placeholder="Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-email">Email</label>
+          <input class="form-input" type="email" id="contact-email" name="email" placeholder="jane@acmehealth.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-phone">Phone (optional)</label>
+          <input class="form-input" type="tel" id="contact-phone" name="phone" placeholder="(919) 555-0100" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="device-types">Device types</label>
+          <input class="form-input" type="text" id="device-types" name="device_types" placeholder="e.g. laptops, servers, phones" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="quantity">Approximate quantity</label>
+          <select class="form-input" id="quantity" name="quantity">
+            <option value="">Select a range</option>
+            <option>Under 10 devices</option>
+            <option>10–50 devices</option>
+            <option>50–200 devices</option>
+            <option>200–500 devices</option>
+            <option>500+ devices</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label class="form-label" for="details">Additional details</label>
+          <textarea class="form-input" id="details" name="message" placeholder="Rough condition, age of equipment, timeline, data destruction requirements, or anything else that helps us give you a useful quote…"></textarea>
+        </div>
+      </div>
+      <div class="form-submit-row">
+        <button type="submit" class="btn-primary" id="inquiry-btn">Submit assessment request</button>
+        <p id="inquiry-success">✓ Received! We'll follow up within one business day.</p>
+      </div>
+      <p class="form-note">We typically respond within one business day with a preliminary range and any follow-up questions. For time-sensitive situations, call us directly at <a href="tel:9193463172" style="color:#1D9E75; text-decoration:none;">(919) 346-3172</a>.</p>
+    </form>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="section">
+  <div class="section-label">Common questions</div>
+  <div class="section-title">About paid acquisition</div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What's the minimum quantity for paid acquisition? <span class="faq-icon">+</span></button>
+      <div class="faq-a">There's no hard floor, but economics work better with volume. A single high-value server or a batch of recent-model laptops is worth discussing. A single old desktop probably isn't. If you're unsure, just describe what you have and we'll tell you honestly whether it qualifies.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How long does it take to get a quote? <span class="faq-icon">+</span></button>
+      <div class="faq-a">With a photo manifest and basic device info, we can usually provide a preliminary range within one business day. Final pricing is confirmed on-site after grading — but you'll have a realistic expectation before we arrive.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What if the on-site condition is worse than the photos? <span class="faq-icon">+</span></button>
+      <div class="faq-a">That's what the sight-adjustment clause is for. If there's a meaningful gap between what we quoted and what we're looking at, we discuss it before finalizing anything. You're never locked in — if the adjusted price doesn't work for you, we can still take the equipment for free recycling.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Can you handle data destruction on the same visit? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Yes — and for most business clients, this is the default. We handle data wipe or physical destruction, issue a certificate of destruction, and provide serialized inventory all as part of the same transaction. Certificates start at $10–15 per storage device.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Do you travel outside the Triangle / Sanford area for paid acquisition? <span class="faq-icon">+</span></button>
+      <div class="faq-a">For large enough jobs, yes. We regularly serve the Triangle, Fayetteville, and surrounding central NC areas. For significant volume — a data center decommission, a major office refresh — reach out and we'll discuss logistics. Travel costs factor in differently for larger deals.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">What documentation do we receive? <span class="faq-icon">+</span></button>
+      <div class="faq-a">Every paid acquisition job includes: a serialized device inventory (make, model, serial number), certificate of destruction for all data-bearing devices, and a landfill diversion report on request. This package covers HIPAA, PCI-DSS, and most internal IT compliance requirements.</div>
+    </div>
+  </div>
+</div>
+
+<footer><p>Junk to Juice · Central NC · NCDEQ Certified E-Recycler · Responsibly recycling electronics one pickup at a time</p></footer>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.parentElement;
+    item.classList.toggle('open');
+  }
+
+  async function handleForm(formId, btnId, successId) {
+    const form = document.getElementById(formId);
+    const btn = document.getElementById(btnId);
+    const success = document.getElementById(successId);
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      try {
+        const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+        if (res.ok) {
+          form.querySelector('.form-submit-row button').style.display = 'none';
+          success.style.display = 'block';
+        } else {
+          btn.disabled = false;
+          btn.textContent = 'Submit assessment request';
+          alert('Something went wrong. Please try again or call us directly.');
+        }
+      } catch {
+        btn.disabled = false;
+        btn.textContent = 'Submit assessment request';
+        alert('Something went wrong. Please try again or call us directly.');
+      }
+    });
+  }
+  handleForm('inquiry-form', 'inquiry-btn', 'inquiry-success');
+</script>
+</body>
+</html>
