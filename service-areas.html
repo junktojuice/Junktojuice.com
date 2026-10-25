@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Areas We Serve | Surplus Electronics Buyer in Central NC | Junk to Juice</title>
+  <meta name="description" content="We buy surplus electronics from businesses in Sanford and Lee County, Raleigh, Cary and Apex, Fayetteville and Fort Bragg, and Pinehurst and Southern Pines." />
+  <link rel="canonical" href="https://junktojuice.com/service-areas" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.7; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 0.5px solid #e0e0e0; flex-wrap: wrap; gap: 12px; }
+    .logo-mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-icon { width: 40px; height: 40px; border-radius: 10px; background: #1D9E75; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .logo-icon svg { width: 22px; height: 22px; }
+    .logo-text { font-size: 20px; font-weight: 500; color: #1a1a1a; }
+    .logo-text span { color: #1D9E75; }
+    .nav-links { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
+    .nav-links a { font-size: 14px; color: #555; text-decoration: none; }
+    .nav-links a:hover, .nav-links a.active { color: #1D9E75; font-weight: 500; }
+    .nav-phone { font-size: 14px; color: #1D9E75; text-decoration: none; font-weight: 500; }
+    .page-hero { padding: 3rem 2rem 2.5rem; border-bottom: 0.5px solid #e0e0e0; }
+    .page-hero .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; margin-bottom: 0.5rem; }
+    .page-hero h1 { font-size: 30px; font-weight: 500; color: #1a1a1a; line-height: 1.25; margin-bottom: 0.75rem; max-width: 640px; }
+    .page-hero p { font-size: 15px; color: #555; max-width: 600px; line-height: 1.7; }
+    .section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; }
+    .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; margin-bottom: 0.5rem; }
+    .section-title { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 0.75rem; }
+    .section-lede { font-size: 14.5px; color: #555; max-width: 620px; line-height: 1.7; margin-bottom: 1.75rem; }
+
+    /* Value tiers */
+    .tier { border-radius: 12px; padding: 1.75rem; margin-bottom: 1.25rem; }
+    .tier-1 { border: 1px solid #1D9E75; background: #F6FCFA; }
+    .tier-2 { border: 0.5px solid #e0e0e0; }
+    .tier-3 { border: 0.5px solid #e0e0e0; background: #f7f7f5; }
+    .tier-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 0.5rem; }
+    .tier-head h2 { font-size: 18px; font-weight: 500; }
+    .tier-pay { font-size: 12px; font-weight: 500; border-radius: 6px; padding: 3px 10px; }
+    .pay-strong { background: #1D9E75; color: #fff; }
+    .pay-mid { background: #E1F5EE; color: #0F6E56; }
+    .pay-none { background: #e8e8e6; color: #666; }
+    .tier > p.desc { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 1.25rem; max-width: 620px; }
+    .items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(185px, 1fr)); gap: 10px; }
+    .item-chip { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #555; display: flex; align-items: center; gap: 8px; }
+    .tier-3 .item-chip { background: #fff; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: #1D9E75; flex-shrink: 0; }
+    .tier-3 .dot { background: #bbb; }
+
+    /* Value factors */
+    .factors { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 1.5rem; }
+    .factor h3 { font-size: 15px; font-weight: 500; margin-bottom: 6px; }
+    .factor p { font-size: 13.5px; color: #555; line-height: 1.65; }
+
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 1.5rem; }
+    .step-card { background: #f7f7f5; border-radius: 12px; padding: 1.25rem; }
+    .step-num { width: 32px; height: 32px; border-radius: 50%; background: #E1F5EE; color: #0F6E56; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; margin-bottom: 1rem; }
+    .step-card h3 { font-size: 15px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
+    .step-card p { font-size: 13px; color: #555; line-height: 1.6; }
+
+    .callout { background: #F6FCFA; border-left: 3px solid #1D9E75; border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin-top: 1.5rem; max-width: 680px; }
+    .callout p { font-size: 14px; color: #444; line-height: 1.7; }
+
+    .notsure-section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; background: #f7f7f5; }
+    .notsure-inner { max-width: 760px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+    .notsure-text h2 { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 0.75rem; }
+    .notsure-text p { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 1.25rem; }
+    .notsure-examples { display: flex; flex-direction: column; gap: 8px; }
+    .notsure-example { font-size: 13px; color: #555; display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; }
+    .notsure-example .dot { margin-top: 5px; background: #9FE1CB; }
+    .ask-card { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 1.5rem; }
+    .ask-card p { font-size: 13px; color: #555; margin-bottom: 1rem; line-height: 1.6; }
+    .ask-textarea { width: 100%; background: #f7f7f5; border: 0.5px solid #bbb; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #1a1a1a; font-family: inherit; resize: vertical; min-height: 90px; margin-bottom: 10px; }
+    .ask-textarea:focus { outline: none; border-color: #1D9E75; }
+    .contact-input { background: #f7f7f5; border: 0.5px solid #bbb; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #1a1a1a; font-family: inherit; }
+    .contact-input:focus { outline: none; border-color: #1D9E75; }
+    .btn-primary { background: #1D9E75; color: #fff; border: none; border-radius: 8px; padding: 12px 28px; font-size: 15px; font-weight: 500; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
+    .btn-primary:hover { background: #178a65; }
+    .ask-card .btn-primary { width: 100%; text-align: center; }
+    footer { padding: 1.5rem 2rem; text-align: center; border-top: 0.5px solid #e0e0e0; }
+    footer p { font-size: 12px; color: #999; }
+    @media (max-width: 560px) { .notsure-inner { grid-template-columns: 1fr; } nav { justify-content: center; } .page-hero h1 { font-size: 25px; } }
+  </style>
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://junktojuice.com/service-areas" />
+  <meta property="og:title" content="Areas We Serve | Junk to Juice" />
+  <meta property="og:description" content="Buying surplus electronics from businesses across central North Carolina." />
+  <meta property="og:site_name" content="Junk to Juice" />
+  <meta property="og:image" content="https://junktojuice.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://junktojuice.com/og-image.png" />
+  <meta name="twitter:title" content="Areas We Serve | Junk to Juice" />
+  <meta name="twitter:description" content="Buying surplus electronics from businesses across central North Carolina." />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV7R6ZXYHS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BV7R6ZXYHS');
+  </script>
+  <style>.hook{font-size:21px!important;font-weight:500!important;color:#1D9E75!important;line-height:1.35!important;margin:0 0 1rem!important;max-width:640px}.hero .hook{margin:0 auto 1rem!important}</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo-mark" href="/">
+    <div class="logo-icon"><svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 3L7 15h7l-3 8L23 11h-7l3-8z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/></svg></div>
+    <span class="logo-text">Junk to <span>Juice</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/services">What we buy</a>
+    <a href="/data-security">Data security</a>
+    <a href="/faq">FAQ &amp; Contact</a>
+    <a class="nav-phone" href="sms:+19193463172" title="Text or email — calls go to voicemail">Text (919) 346-3172</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="section-label">Areas we serve</div>
+  <h1>Surplus Electronics Buyer Serving Central North Carolina</h1>
+  <p>Junk to Juice is based in Sanford and buys surplus, decommissioned and end-of-life electronics from businesses across central NC. Send us a list or a few photos and we'll tell you what it's worth, wherever you are in the areas below.</p>
+</div>
+<div class="section" id="sanford">
+  <div class="section-title">Sanford &amp; Lee County</div>
+  <p class="section-lede" style="margin-bottom:0;">Our home base. We buy from manufacturers, labs, offices, schools and contractors in Sanford, Broadway, and the rest of Lee County, plus nearby Pittsboro and Cameron. Equipment that has been sitting in a storeroom or warehouse is exactly what we look for.</p>
+</div>
+
+<div class="section" id="raleigh">
+  <div class="section-title">Raleigh, Cary &amp; Apex</div>
+  <p class="section-lede" style="margin-bottom:0;">Office refreshes, server and network decommissions, AV upgrades and lab clean-outs across the Triangle. We provide itemized offers, documented data destruction and certificates your IT or compliance team can file.</p>
+</div>
+
+<div class="section" id="fayetteville">
+  <div class="section-title">Fayetteville &amp; Fort Bragg</div>
+  <p class="section-lede" style="margin-bottom:0;">We buy surplus IT, telecom, medical and industrial equipment from businesses, contractors and medical practices in Fayetteville and the Fort Bragg area. Every drive is sanitized or destroyed before anything is resold.</p>
+</div>
+
+<div class="section" id="pinehurst">
+  <div class="section-title">Pinehurst &amp; Southern Pines</div>
+  <p class="section-lede" style="margin-bottom:0;">We buy retired equipment from medical offices, clinics, hospitality and small businesses in Moore County, turning it into cash and getting it out of the way, with data destruction included.</p>
+</div>
+
+<div class="section">
+  <div class="section-title">Somewhere else in central NC?</div>
+  <p class="section-lede">Ask anyway. <a href="/faq#contact" style="color:#1D9E75; text-decoration:none; font-weight:500;">Request a quote</a>, text photos to <a href="sms:+19193463172" style="color:#1D9E75; text-decoration:none; font-weight:500;">(919) 346-3172</a>, or email <a href="mailto:Steve@junktojuice.com" style="color:#1D9E75; text-decoration:none; font-weight:500;">Steve@junktojuice.com</a>.</p>
+</div>
+
+<footer>
+  <p style="font-size:12px; color:#999; margin-bottom:4px;">Junk to Juice · Central NC · Buying surplus electronics · Secure data destruction · Nothing landfilled</p>
+  <p style="font-size:12px; color:#999;">
+    <a href="sms:+19193463172" style="color:#1D9E75; text-decoration:none;">Text (919) 346-3172</a>
+    &nbsp;·&nbsp;
+    <a href="mailto:Steve@junktojuice.com" style="color:#1D9E75; text-decoration:none;">Steve@junktojuice.com</a>
+    &nbsp;·&nbsp;
+    <a href="/service-areas" style="color:#1D9E75; text-decoration:none;">Areas we serve</a>
+  </p>
+</footer>
+<script>
+  window.addEventListener('pageshow', function(e) {
+    if (e.persisted) { window.location.reload(); }
+  });
+</script>
+</body>
+</html>
