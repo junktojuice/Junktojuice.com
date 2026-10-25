@@ -3,86 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Security &amp; Chain of Custody | Junk to Juice</title>
-  <meta name="description" content="Every drive wiped to NIST SP 800-88 or destroyed before resale, with certificates of destruction and chain of custody for central NC businesses." />
+  <title>Data Destruction for Business Electronics | Sanford &amp; Central NC | Junk to Juice</title>
+  <meta name="description" content="Every hard drive and SSD wiped following NIST SP 800-88 or physically destroyed, with a certificate of destruction. Free pickup across central NC." />
   <link rel="canonical" href="https://junktojuice.com/data-security" />
   <link rel="icon" href="/favicon.ico" sizes="32x32" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.7; }
-    nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 0.5px solid #e0e0e0; flex-wrap: wrap; gap: 12px; }
-    .logo-mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
-    .logo-icon { width: 40px; height: 40px; border-radius: 10px; background: #1D9E75; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .logo-icon svg { width: 22px; height: 22px; }
-    .logo-text { font-size: 20px; font-weight: 500; color: #1a1a1a; }
-    .logo-text span { color: #1D9E75; }
-    .nav-links { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
-    .nav-links a { font-size: 14px; color: #555; text-decoration: none; }
-    .nav-links a:hover, .nav-links a.active { color: #1D9E75; font-weight: 500; }
-    .nav-phone { font-size: 14px; color: #1D9E75; text-decoration: none; font-weight: 500; }
-    .datasec-hero { padding: 3.5rem 2rem 3rem; background: #0F1F1A; border-bottom: 0.5px solid #2A4A3E; }
-    .datasec-hero .label { font-size: 12px; font-weight: 500; color: #9FE1CB; margin-bottom: 0.5rem; }
-    .datasec-hero h1 { font-size: 30px; font-weight: 500; color: #fff; line-height: 1.25; margin-bottom: 0.75rem; max-width: 660px; }
-    .datasec-hero p { font-size: 15px; color: #9FB8B0; max-width: 620px; line-height: 1.7; }
-    .datasec-section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; background: #0F1F1A; }
-    .datasec-inner { max-width: 900px; margin: 0 auto; }
-    .datasec-label { font-size: 12px; font-weight: 500; color: #9FE1CB; margin-bottom: 0.5rem; }
-    .datasec-title { font-size: 22px; font-weight: 500; color: #fff; margin-bottom: 0.75rem; }
-    .datasec-sub { font-size: 14px; color: #9FB8B0; line-height: 1.7; margin-bottom: 2rem; max-width: 640px; }
-    .datasec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 2rem; }
-    .datasec-card { background: #162820; border: 0.5px solid #2A4A3E; border-radius: 12px; padding: 1.35rem; }
-    .datasec-card-icon { width: 36px; height: 36px; border-radius: 8px; background: rgba(29,158,117,0.13); display: flex; align-items: center; justify-content: center; margin-bottom: 0.75rem; font-size: 18px; }
-    .datasec-card h3 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 6px; }
-    .datasec-card p { font-size: 12.5px; color: #9FB8B0; line-height: 1.65; }
-    .datasec-pricing { background: #162820; border: 0.5px solid #1D9E75; border-radius: 12px; padding: 1.75rem; margin-top: 0.5rem; }
-    .datasec-pricing-title { font-size: 13px; font-weight: 600; color: #9FE1CB; letter-spacing: 0.02em; margin-bottom: 0.75rem; }
-    .datasec-pricing > p.intro { font-size: 13.5px; color: #9FB8B0; line-height: 1.7; margin-bottom: 1.5rem; max-width: 640px; }
-    .datasec-pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
-    .datasec-price-item { display: flex; flex-direction: column; gap: 4px; }
-    .datasec-price-item .price-label { font-size: 12px; color: #9FB8B0; }
-    .datasec-price-item .price-val { font-size: 17px; font-weight: 500; color: #fff; }
-    .datasec-price-item .price-note { font-size: 11px; color: #6A9990; line-height: 1.5; }
-    .datasec-note { font-size: 12px; color: #6A9990; margin-top: 1.25rem; line-height: 1.7; }
-    .light-section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; }
-    .light-section .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; margin-bottom: 0.5rem; }
-    .light-section .section-title { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 1.25rem; }
-    .destruction-note { background: #f7f7f5; border-left: 3px solid #1D9E75; border-radius: 0 8px 8px 0; padding: 1.1rem 1.35rem; font-size: 13.5px; color: #444; line-height: 1.75; margin-bottom: 1rem; max-width: 760px; }
-    .destruction-note strong { color: #1a1a1a; }
-    .chain { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; margin-top: 1.5rem; }
-    .chain-step { border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 1.25rem; }
-    .chain-step .n { font-size: 12px; font-weight: 500; color: #0F6E56; background: #E1F5EE; border-radius: 6px; padding: 2px 9px; display: inline-block; margin-bottom: 0.75rem; }
-    .chain-step h3 { font-size: 14.5px; font-weight: 500; margin-bottom: 6px; }
-    .chain-step p { font-size: 13px; color: #555; line-height: 1.6; }
-    .who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 1rem; }
-    .who-chip { background: #E1F5EE; border-radius: 8px; padding: 0.75rem 1rem; font-size: 13px; color: #0F6E56; font-weight: 500; }
-    .contact-cta { text-align: center; padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; }
-    .contact-cta h2 { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 0.75rem; }
-    .contact-cta p { font-size: 14px; color: #555; margin-bottom: 1.5rem; max-width: 560px; margin-left: auto; margin-right: auto; }
-    .btn-primary { background: #1D9E75; color: #fff; border: none; border-radius: 8px; padding: 12px 28px; font-size: 15px; font-weight: 500; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
-    .btn-primary:hover { background: #178a65; }
-    .btn-secondary { background: transparent; color: #1a1a1a; border: 0.5px solid #bbb; border-radius: 8px; padding: 12px 28px; font-size: 15px; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; margin-left: 12px; }
-    .btn-secondary:hover { background: #f5f5f5; }
-    footer { padding: 1.5rem 2rem; text-align: center; border-top: 0.5px solid #e0e0e0; }
-    footer p { font-size: 12px; color: #999; }
-    @media (max-width: 560px) { nav { justify-content: center; } .btn-secondary { margin-left: 0; margin-top: 8px; } .datasec-hero h1 { font-size: 25px; } }
-  </style>
+  <link rel="stylesheet" href="/style.css" />
   <meta name="robots" content="index, follow" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://junktojuice.com/data-security" />
-  <meta property="og:title" content="Data Security &amp; Chain of Custody | Junk to Juice" />
-  <meta property="og:description" content="Every drive sanitized to NIST SP 800-88 or physically destroyed before resale. Certificates of destruction on every commercial purchase." />
+  <meta property="og:title" content="Data Destruction | Junk to Juice Electronics Recycling" />
+  <meta property="og:description" content="Every drive wiped or physically destroyed, with a certificate of destruction." />
   <meta property="og:site_name" content="Junk to Juice" />
   <meta property="og:image" content="https://junktojuice.com/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://junktojuice.com/og-image.png" />
-  <meta name="twitter:title" content="Data Security &amp; Chain of Custody | Junk to Juice" />
-  <meta name="twitter:description" content="Every drive sanitized to NIST SP 800-88 or physically destroyed before resale." />
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV7R6ZXYHS"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -90,185 +26,67 @@
     gtag('js', new Date());
     gtag('config', 'G-BV7R6ZXYHS');
   </script>
-  <style>.hook{font-size:21px!important;font-weight:500!important;color:#1D9E75!important;line-height:1.35!important;margin:0 0 1rem!important;max-width:640px}.hero .hook{margin:0 auto 1rem!important}</style>
 </head>
 <body>
 
 <nav>
-  <a class="logo-mark" href="/">
-    <div class="logo-icon"><svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 3L7 15h7l-3 8L23 11h-7l3-8z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/></svg></div>
-    <span class="logo-text">Junk to <span>Juice</span></span>
-  </a>
-  <div class="nav-links">
-    <a href="/">Home</a>
-    <a href="/services">What we buy</a>
-    <a href="/data-security" class="active">Data security</a>
-    <a href="/faq">FAQ &amp; Contact</a>
-    <a class="nav-phone" href="sms:+19193463172" title="Text or email — calls go to voicemail">Text (919) 346-3172</a>
+  <div class="wrap">
+    <a class="logo-mark" href="/">
+      <div class="logo-icon"><svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 3L7 15h7l-3 8L23 11h-7l3-8z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/></svg></div>
+      <span class="logo-text">Junk to <span>Juice</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="/services">What we take</a>
+      <a href="/data-security" class="active">Data security</a>
+      <a href="/faq">FAQ</a>
+      <a class="nav-cta" href="sms:+19193463172">Text (919) 346-3172</a>
+    </div>
   </div>
 </nav>
 
-<div class="datasec-hero">
-  <div class="label">For businesses &amp; organizations</div>
-  <h1>Secure Data Destruction for Business Electronics in Central NC</h1>
-  <p class="hook">We buy the hardware. We don't buy the data on it.</p>
-  <p>Because we resell equipment rather than shred it, sanitization isn't an optional add-on here — it's a condition of the purchase. No storage device is tested, listed, or sold until it has been sanitized or destroyed, and you get documentation either way. That applies to anything holding data, not just computers.</p>
-</div>
-
-<div class="datasec-section" id="data-security">
-  <div class="datasec-inner">
-    <div class="datasec-label">What's included</div>
-    <div class="datasec-title">Every commercial purchase, as standard</div>
-    <p class="datasec-sub">These aren't upsells. They're part of how the transaction works, because we can't responsibly resell your equipment without them.</p>
-    <div class="datasec-grid">
-      <div class="datasec-card">
-        <div class="datasec-card-icon">🔒</div>
-        <h3>Sanitization or Destruction</h3>
-        <p>Every storage device is sanitized to NIST SP 800-88 Rev. 1 standards, or physically destroyed if you prefer. You choose the method per lot. Destroyed drives are removed from the resale stream entirely.</p>
-      </div>
-      <div class="datasec-card">
-        <div class="datasec-card-icon">📋</div>
-        <h3>Serialized Inventory</h3>
-        <p>Every device logged by make, model and serial before it leaves your building. You keep a signed copy — it's your record of exactly what changed hands, and it doubles as your asset retirement documentation.</p>
-      </div>
-      <div class="datasec-card">
-        <div class="datasec-card-icon">📄</div>
-        <h3>Certificate of Destruction</h3>
-        <p>Documents what was collected, which method was applied to each drive, and when. Suitable for HIPAA, PCI-DSS, GLBA and internal IT compliance files.</p>
-      </div>
-      <div class="datasec-card">
-        <div class="datasec-card-icon">🔗</div>
-        <h3>Chain of Custody</h3>
-        <p>Documented transfer from your site onward. If a device is resold, the sanitization record stays attached to that serial number, so there's a defensible trail if anyone ever asks.</p>
-      </div>
-      <div class="datasec-card">
-        <div class="datasec-card-icon">🌱</div>
-        <h3>Landfill Diversion Report</h3>
-        <p>Pounds diverted and a reuse-versus-recycling breakdown for everything we collect from you. Reuse counts for considerably more than recycling in most ESG frameworks, which works in your favor here.</p>
-      </div>
-      <div class="datasec-card">
-        <div class="datasec-card-icon">👁</div>
-        <h3>Witnessed Destruction</h3>
-        <p>For high-sensitivity environments, you or your compliance officer can observe destruction in person, or we can destroy drives on site before anything is loaded.</p>
-      </div>
-    </div>
-
-    <div class="datasec-pricing">
-      <div class="datasec-pricing-title">How this is priced now</div>
-      <p class="intro">We used to charge per device for data destruction. Under the purchasing model that no longer makes sense — the cost of sanitization is built into what we can pay for the equipment, and it's reflected in the offer you see. There is no separate invoice.</p>
-      <div class="datasec-pricing-grid">
-        <div class="datasec-price-item">
-          <span class="price-label">Sanitization to NIST 800-88</span>
-          <span class="price-val">Included</span>
-          <span class="price-note">Every drive, every commercial lot</span>
-        </div>
-        <div class="datasec-price-item">
-          <span class="price-label">Serialized inventory &amp; manifest</span>
-          <span class="price-val">Included</span>
-          <span class="price-note">Captured on site before loading</span>
-        </div>
-        <div class="datasec-price-item">
-          <span class="price-label">Certificate of destruction</span>
-          <span class="price-val">Included</span>
-          <span class="price-note">Issued after processing</span>
-        </div>
-        <div class="datasec-price-item">
-          <span class="price-label">Physical destruction</span>
-          <span class="price-val">Reflected in offer</span>
-          <span class="price-note">A destroyed drive can't be resold, so the offer is adjusted accordingly — we'll show you the difference</span>
-        </div>
-        <div class="datasec-price-item">
-          <span class="price-label">On-site destruction</span>
-          <span class="price-val">By arrangement</span>
-          <span class="price-note">For regulated or high-sensitivity environments</span>
-        </div>
-        <div class="datasec-price-item">
-          <span class="price-label">Pickup &amp; removal</span>
-          <span class="price-val">Usually no charge</span>
-          <span class="price-note">Free alongside a lot we're buying; loads with little or no recoverable value may carry a handling fee</span>
-        </div>
-      </div>
-      <p class="datasec-note">Transparent by design: when you choose physical destruction over sanitization, you're choosing a lower offer, and you should be able to see exactly how much lower before you decide. We'll always quote both so the trade-off is yours to make rather than ours to hide.</p>
-    </div>
+<header class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">Data security</div>
+    <h1>Your data doesn't leave with your hardware.</h1>
+    <p>Every device that stores data is wiped or physically destroyed before anything else happens to it. You get a certificate of destruction for your records.</p>
   </div>
-</div>
+</header>
 
-<div class="light-section">
-  <div class="section-label">Standards</div>
-  <div class="section-title">What we mean by "sanitized"</div>
-  <div class="destruction-note">
-    <strong>NIST SP 800-88 Rev. 1</strong> is the current federal guideline for media sanitization and it's what we work to. It's method-appropriate rather than one-size-fits-all: modern SSDs and self-encrypting drives are handled with cryptographic erase or firmware-level sanitize commands, while traditional magnetic drives get a verified overwrite. This matters, because multi-pass overwriting — the old DoD 5220.22-M approach — is both unnecessary on modern magnetic media and unreliable on flash, where wear-levelling can leave data in cells the overwrite never touches. Every sanitization is verified, and any drive that fails verification is physically destroyed instead of resold. No exceptions.
+<section class="points">
+  <div class="wrap">
+    <div class="point"><h2>Wiped</h2><p>Drives are erased following NIST SP 800-88, the federal guideline for media sanitization. SSDs get a firmware-level secure erase, not just a format.</p></div>
+    <div class="point"><h2>Or destroyed</h2><p>Prefer physical destruction? Drives are drilled or crushed so the data can't be recovered. Just say so when you book.</p></div>
+    <div class="point"><h2>Documented</h2><p>A certificate of destruction lists what was collected and how each drive was handled.</p></div>
   </div>
-  <div class="destruction-note">
-    <strong>Physical destruction applies to storage media specifically</strong> — hard drives, SSDs, flash chips, and the storage inside phones and tablets. The drive is shredded or drilled so data is unrecoverable by any means. The rest of the device is unaffected and can still be resold or recycled normally; we're not destroying the whole laptop, only the part that holds data.
-  </div>
-  <div class="destruction-note">
-    <strong>Devices with storage we can't reach</strong> — printers with internal drives, multifunction copiers, VoIP phones, network appliances with configuration and credentials in flash, badge and access control systems — are treated as data-bearing and handled the same way. These are the ones most often missed in a decommission, and they're a common source of unpleasant surprises.
-  </div>
-</div>
+</section>
 
-<div class="light-section">
-  <div class="section-label">Chain of custody</div>
-  <div class="section-title">Where your equipment actually goes</div>
-  <div class="chain">
-    <div class="chain-step">
-      <span class="n">1</span>
-      <h3>Inventoried at your site</h3>
-      <p>Serial-level capture before anything is loaded, with a signed manifest handed to you on the spot.</p>
-    </div>
-    <div class="chain-step">
-      <span class="n">2</span>
-      <h3>Transported directly</h3>
-      <p>No third-party brokers or intermediate warehouses. What we collect goes straight to our facility.</p>
-    </div>
-    <div class="chain-step">
-      <span class="n">3</span>
-      <h3>Sanitized before anything else</h3>
-      <p>Drives are processed before testing, grading or listing. Nothing gets powered up for evaluation with your data still on it.</p>
-    </div>
-    <div class="chain-step">
-      <span class="n">4</span>
-      <h3>Resold or recycled</h3>
-      <p>Working equipment is remarketed. Everything else goes to responsible downstream processing. Documentation available for both.</p>
-    </div>
-  </div>
-</div>
+<section class="section">
+  <div class="wrap prose">
+    <h2 style="margin-top:0;">The devices people forget</h2>
+    <p>It's not just computers. Copiers and printers with internal drives, VoIP phones, network equipment with saved passwords, and phones and tablets all hold data. We treat every one of them the same way.</p>
 
-<div class="light-section">
-  <div class="section-label">Who this is for</div>
-  <div class="section-title">Organizations where documentation isn't optional</div>
-  <div class="who-grid">
-    <div class="who-chip">🏥 Medical &amp; dental practices</div>
-    <div class="who-chip">⚖️ Law firms</div>
-    <div class="who-chip">🏦 Banks &amp; financial services</div>
-    <div class="who-chip">🏭 Manufacturing &amp; industrial</div>
-    <div class="who-chip">🏛 Government &amp; education</div>
-    <div class="who-chip">🌱 Companies with ESG commitments</div>
-    <div class="who-chip">💼 HR &amp; staffing firms</div>
-    <div class="who-chip">🔬 Labs &amp; research facilities</div>
-    <div class="who-chip">🖥 MSPs managing client refreshes</div>
-  </div>
-</div>
+    <h2>Should I wipe things first?</h2>
+    <p>You don't need to. A factory reset often isn't a real wipe, so we treat every device as if it still holds data. If your own policy says to wipe or pull drives first, go ahead; it won't get in the way.</p>
 
-<div class="contact-cta">
-  <h2>Have a compliance requirement we should know about?</h2>
-  <p>Tell us the standard you're working to and we'll tell you plainly whether we can meet it. If your policy requires something we can't do, we'd rather say so up front than find out at the loading dock.</p>
-  <a class="btn-primary" href="/faq#contact">Get in touch</a>
-  <a class="btn-secondary" href="sms:+19193463172">Text us photos: (919) 346-3172</a>
-</div>
+    <h2>Want to keep the drives?</h2>
+    <p>That's fine too. Pull them and hang on to them, and we'll take the rest.</p>
+
+    <h2>Have a specific requirement?</h2>
+    <p>Tell us the standard or policy you're working to and we'll tell you plainly whether we can meet it.</p>
+    <p style="margin-top:1.5rem;"><a class="btn-primary" href="sms:+19193463172" style="text-decoration:none;">Text (919) 346-3172</a>
+    &nbsp; or email <a href="mailto:Steve@junktojuice.com">Steve@junktojuice.com</a></p>
+  </div>
+</section>
 
 <footer>
-  <p style="font-size:12px; color:#999; margin-bottom:4px;">Junk to Juice · Central NC · Buying surplus electronics · Secure data destruction · Nothing landfilled</p>
-  <p style="font-size:12px; color:#999;">
-    <a href="sms:+19193463172" style="color:#1D9E75; text-decoration:none;">Text (919) 346-3172</a>
-    &nbsp;·&nbsp;
-    <a href="mailto:Steve@junktojuice.com" style="color:#1D9E75; text-decoration:none;">Steve@junktojuice.com</a>
-  </p>
+  <div class="wrap">
+    <div>Junk to Juice · Electronics recycling · Sanford, NC</div>
+    <div>
+      <a href="sms:+19193463172">Text (919) 346-3172</a> ·
+      <a href="mailto:Steve@junktojuice.com">Steve@junktojuice.com</a> ·
+      <a href="https://www.facebook.com/junktojuice" rel="noopener">Facebook</a>
+    </div>
+  </div>
 </footer>
-<script>
-  window.addEventListener('pageshow', function(e) {
-    if (e.persisted) { window.location.reload(); }
-  });
-</script>
 </body>
 </html>

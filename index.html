@@ -10,73 +10,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.6; }
-    a { color: #0F6E56; }
-    .wrap { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
-    nav { border-bottom: 1px solid #ececec; }
-    nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 1rem; padding-bottom: 1rem; flex-wrap: wrap; }
-    .logo-mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
-    .logo-icon { width: 40px; height: 40px; border-radius: 10px; background: #1D9E75; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .logo-icon svg { width: 22px; height: 22px; }
-    .logo-text { font-size: 20px; font-weight: 600; color: #1a1a1a; }
-    .logo-text span { color: #1D9E75; }
-    .nav-links { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; }
-    .nav-links a { font-size: 15px; color: #555; text-decoration: none; }
-    .nav-links a:hover, .nav-links a.active { color: #0F6E56; }
-    .nav-cta { background: #0F6E56; color: #fff !important; padding: 8px 16px; border-radius: 8px; font-weight: 600; }
-
-    .hero { padding: 4.5rem 0 4rem; }
-    .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #0F6E56; margin-bottom: 1rem; }
-    .hero h1 { font-size: 48px; line-height: 1.08; font-weight: 700; letter-spacing: -0.02em; max-width: 720px; margin-bottom: 1.25rem; }
-    .hero h1 span { color: #1D9E75; }
-    .hero p.lede { font-size: 19px; color: #444; max-width: 600px; margin-bottom: 2rem; }
-    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
-    .btn-primary { background: #0F6E56; color: #fff; border: none; border-radius: 10px; padding: 14px 26px; font-size: 16px; font-weight: 600; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
-    .btn-primary:hover { background: #0B5543; }
-    .btn-secondary { background: #fff; color: #1a1a1a; border: 1px solid #c8c8c8; border-radius: 10px; padding: 14px 26px; font-size: 16px; font-weight: 500; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
-    .btn-secondary:hover { background: #f5f5f5; }
-    .homes { margin-top: 1.25rem; font-size: 15px; color: #666; }
-
-    .points { background: #EEF8F4; padding: 2.5rem 0; }
-    .points .wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
-    .point h2 { font-size: 18px; font-weight: 700; color: #0F6E56; margin-bottom: 4px; }
-    .point p { font-size: 15px; color: #333; }
-
-    .section { padding: 3.5rem 0; }
-    .section h2.title { font-size: 28px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 1.25rem; }
-    .take { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.25rem; }
-    .take li { list-style: none; background: #f4f4f2; border-radius: 999px; padding: 8px 16px; font-size: 15px; }
-    .note { font-size: 16px; color: #444; }
-
-    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-    .step { display: flex; gap: 14px; align-items: flex-start; }
-    .step-num { width: 34px; height: 34px; border-radius: 50%; background: #0F6E56; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
-    .step h3 { font-size: 17px; margin-bottom: 2px; }
-    .step p { font-size: 15px; color: #555; }
-
-    .about { border-top: 1px solid #ececec; }
-    .about p { font-size: 17px; color: #333; max-width: 640px; margin-bottom: 0.75rem; }
-
-    .contact { background: #f7f7f5; }
-    .contact-card { max-width: 560px; }
-    .contact-row { display: flex; gap: 10px; }
-    .contact-input { flex: 1; width: 100%; background: #fff; border: 1px solid #c8c8c8; border-radius: 8px; padding: 12px 14px; font-size: 15px; color: #1a1a1a; font-family: inherit; }
-    .contact-input:focus { outline: 2px solid #1D9E75; border-color: #1D9E75; }
-    .contact-alt { margin-top: 1rem; font-size: 15px; color: #555; }
-
-    footer { padding: 2rem 0; border-top: 1px solid #ececec; font-size: 14px; color: #666; }
-    footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-    footer a { color: #0F6E56; text-decoration: none; }
-    @media (max-width: 600px) {
-      .hero { padding: 3rem 0 2.75rem; }
-      .hero h1 { font-size: 34px; }
-      .hero p.lede { font-size: 17px; }
-      .contact-row { flex-direction: column; }
-      .nav-links { gap: 14px; }
-    }
-  </style>
+  <link rel="stylesheet" href="/style.css" />
   <meta name="robots" content="index, follow" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://junktojuice.com/" />
