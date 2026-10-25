@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Electronics Recycling &amp; Surplus Buyback | Sanford &amp; Central NC | Junk to Juice</title>
-  <meta name="description" content="We buy surplus IT, lab, medical, industrial and telecom electronics from businesses in Sanford, Raleigh and central NC. Secure data destruction included." />
+  <title>Free Electronics Recycling Pickup | Sanford &amp; Central NC | Junk to Juice</title>
+  <meta name="description" content="Free pickup of retired computers, servers, network gear and office electronics in Sanford and central NC. Every drive wiped or destroyed. Nothing landfilled." />
   <link rel="canonical" href="https://junktojuice.com/" />
   <link rel="icon" href="/favicon.ico" sizes="32x32" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -12,91 +12,91 @@
   <link rel="manifest" href="/site.webmanifest" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.7; }
-    nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; border-bottom: 0.5px solid #e0e0e0; flex-wrap: wrap; gap: 12px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.6; }
+    a { color: #0F6E56; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
+    nav { border-bottom: 1px solid #ececec; }
+    nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 1rem; padding-bottom: 1rem; flex-wrap: wrap; }
     .logo-mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
     .logo-icon { width: 40px; height: 40px; border-radius: 10px; background: #1D9E75; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .logo-icon svg { width: 22px; height: 22px; }
-    .logo-text { font-size: 20px; font-weight: 500; color: #1a1a1a; }
+    .logo-text { font-size: 20px; font-weight: 600; color: #1a1a1a; }
     .logo-text span { color: #1D9E75; }
-    .nav-links { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
-    .nav-links a { font-size: 14px; color: #555; text-decoration: none; }
-    .nav-links a:hover, .nav-links a.active { color: #1D9E75; font-weight: 500; }
-    .nav-phone { font-size: 14px; color: #1D9E75; text-decoration: none; font-weight: 500; }
-    .hero { padding: 4.5rem 2rem 3.5rem; text-align: center; border-bottom: 0.5px solid #e0e0e0; }
-    .badge { display: inline-block; background: #E1F5EE; color: #0F6E56; font-size: 12px; font-weight: 500; border-radius: 20px; padding: 4px 14px; margin-bottom: 1.25rem; }
-    .hero h1 { font-size: 38px; font-weight: 500; color: #1a1a1a; line-height: 1.2; margin-bottom: 1rem; max-width: 640px; margin-left: auto; margin-right: auto; }
-    .hero p { font-size: 16px; color: #555; max-width: 520px; margin: 0 auto 2rem; line-height: 1.7; }
-    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-    .btn-primary { background: #1D9E75; color: #fff; border: none; border-radius: 8px; padding: 12px 28px; font-size: 15px; font-weight: 500; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
-    .btn-primary:hover { background: #178a65; }
-    .btn-secondary { background: transparent; color: #1a1a1a; border: 0.5px solid #bbb; border-radius: 8px; padding: 12px 28px; font-size: 15px; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
+    .nav-links { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; }
+    .nav-links a { font-size: 15px; color: #555; text-decoration: none; }
+    .nav-links a:hover, .nav-links a.active { color: #0F6E56; }
+    .nav-cta { background: #0F6E56; color: #fff !important; padding: 8px 16px; border-radius: 8px; font-weight: 600; }
+
+    .hero { padding: 4.5rem 0 4rem; }
+    .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #0F6E56; margin-bottom: 1rem; }
+    .hero h1 { font-size: 48px; line-height: 1.08; font-weight: 700; letter-spacing: -0.02em; max-width: 720px; margin-bottom: 1.25rem; }
+    .hero h1 span { color: #1D9E75; }
+    .hero p.lede { font-size: 19px; color: #444; max-width: 600px; margin-bottom: 2rem; }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary { background: #0F6E56; color: #fff; border: none; border-radius: 10px; padding: 14px 26px; font-size: 16px; font-weight: 600; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
+    .btn-primary:hover { background: #0B5543; }
+    .btn-secondary { background: #fff; color: #1a1a1a; border: 1px solid #c8c8c8; border-radius: 10px; padding: 14px 26px; font-size: 16px; font-weight: 500; cursor: pointer; font-family: inherit; text-decoration: none; display: inline-block; }
     .btn-secondary:hover { background: #f5f5f5; }
-    .section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; }
-    .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; letter-spacing: 0.02em; margin-bottom: 0.5rem; }
-    .section-title { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 0.75rem; }
-    .section-lede { font-size: 15px; color: #555; max-width: 620px; line-height: 1.7; margin-bottom: 2rem; }
+    .homes { margin-top: 1.25rem; font-size: 15px; color: #666; }
 
-    .outcomes { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
-    .outcome { border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 1.5rem; }
-    .outcome.paid { border-color: #1D9E75; background: #F6FCFA; }
-    .outcome-tag { font-size: 12px; font-weight: 500; color: #0F6E56; background: #E1F5EE; display: inline-block; border-radius: 6px; padding: 3px 10px; margin-bottom: 0.85rem; }
-    .outcome-tag.grey { background: #f0f0ee; color: #666; }
-    .outcome h3 { font-size: 16px; font-weight: 500; margin-bottom: 8px; }
-    .outcome p { font-size: 13.5px; color: #555; line-height: 1.65; }
+    .points { background: #EEF8F4; padding: 2.5rem 0; }
+    .points .wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .point h2 { font-size: 18px; font-weight: 700; color: #0F6E56; margin-bottom: 4px; }
+    .point p { font-size: 15px; color: #333; }
 
-    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
-    .step-card { background: #f7f7f5; border-radius: 12px; padding: 1.25rem; }
-    .step-num { width: 32px; height: 32px; border-radius: 50%; background: #E1F5EE; color: #0F6E56; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; margin-bottom: 1rem; }
-    .step-card h3 { font-size: 15px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
-    .step-card p { font-size: 13px; color: #555; line-height: 1.6; }
+    .section { padding: 3.5rem 0; }
+    .section h2.title { font-size: 28px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 1.25rem; }
+    .take { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.25rem; }
+    .take li { list-style: none; background: #f4f4f2; border-radius: 999px; padding: 8px 16px; font-size: 15px; }
+    .note { font-size: 16px; color: #444; }
 
-    .triggers { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 0.5rem; }
-    .trigger { display: flex; gap: 10px; align-items: flex-start; background: #f7f7f5; border-radius: 8px; padding: 0.85rem 1rem; }
-    .trigger .dot { width: 6px; height: 6px; border-radius: 50%; background: #1D9E75; flex-shrink: 0; margin-top: 8px; }
-    .trigger span.txt { font-size: 13.5px; color: #444; line-height: 1.6; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .step { display: flex; gap: 14px; align-items: flex-start; }
+    .step-num { width: 34px; height: 34px; border-radius: 50%; background: #0F6E56; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+    .step h3 { font-size: 17px; margin-bottom: 2px; }
+    .step p { font-size: 15px; color: #555; }
 
-    .page-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin-top: 1.5rem; }
-    .page-card { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 1.5rem; text-decoration: none; color: inherit; transition: border-color 0.15s, box-shadow 0.15s; display: block; }
-    .page-card:hover { border-color: #1D9E75; box-shadow: 0 2px 12px rgba(29,158,117,0.1); }
-    .page-card-icon { font-size: 24px; margin-bottom: 0.75rem; }
-    .page-card h3 { font-size: 15px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
-    .page-card p { font-size: 13px; color: #555; line-height: 1.6; }
-    .page-card .arrow { font-size: 13px; color: #1D9E75; margin-top: 0.75rem; display: block; }
+    .about { border-top: 1px solid #ececec; }
+    .about p { font-size: 17px; color: #333; max-width: 640px; margin-bottom: 0.75rem; }
 
-    .promise { background: #f7f7f5; }
-    .promise-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 1.5rem; }
-    .promise-item h3 { font-size: 16px; font-weight: 500; margin-bottom: 8px; }
-    .promise-item p { font-size: 14px; color: #555; line-height: 1.7; }
-
-    .contact-card { background: #f7f7f5; border-radius: 12px; padding: 2rem; max-width: 520px; margin: 1.5rem auto 0; }
-    .contact-card p { font-size: 14px; color: #555; margin-bottom: 1.25rem; line-height: 1.7; }
+    .contact { background: #f7f7f5; }
+    .contact-card { max-width: 560px; }
     .contact-row { display: flex; gap: 10px; }
-    .contact-input { flex: 1; background: #fff; border: 0.5px solid #bbb; border-radius: 8px; padding: 10px 14px; font-size: 14px; color: #1a1a1a; font-family: inherit; }
-    .contact-input:focus { outline: none; border-color: #1D9E75; }
-    footer { padding: 1.5rem 2rem; text-align: center; border-top: 0.5px solid #e0e0e0; }
-    footer p { font-size: 12px; color: #999; }
-    @media (max-width: 560px) { .hero h1 { font-size: 28px; } .contact-row { flex-direction: column; } nav { justify-content: center; } }
+    .contact-input { flex: 1; width: 100%; background: #fff; border: 1px solid #c8c8c8; border-radius: 8px; padding: 12px 14px; font-size: 15px; color: #1a1a1a; font-family: inherit; }
+    .contact-input:focus { outline: 2px solid #1D9E75; border-color: #1D9E75; }
+    .contact-alt { margin-top: 1rem; font-size: 15px; color: #555; }
+
+    footer { padding: 2rem 0; border-top: 1px solid #ececec; font-size: 14px; color: #666; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    footer a { color: #0F6E56; text-decoration: none; }
+    @media (max-width: 600px) {
+      .hero { padding: 3rem 0 2.75rem; }
+      .hero h1 { font-size: 34px; }
+      .hero p.lede { font-size: 17px; }
+      .contact-row { flex-direction: column; }
+      .nav-links { gap: 14px; }
+    }
   </style>
   <meta name="robots" content="index, follow" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://junktojuice.com/" />
-  <meta property="og:title" content="Junk to Juice | Electronics Recycling &amp; Surplus Buyback in Central NC" />
-  <meta property="og:description" content="We purchase surplus and decommissioned electronics from businesses across central NC — IT, lab, medical, industrial, AV and telecom. Secure data destruction included." />
+  <meta property="og:title" content="Junk to Juice | Free Electronics Recycling Pickup in Central NC" />
+  <meta property="og:description" content="Free pickup of retired computers, servers and office electronics in Sanford and central NC. Every drive wiped or destroyed. Nothing landfilled." />
   <meta property="og:site_name" content="Junk to Juice" />
   <meta property="og:image" content="https://junktojuice.com/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://junktojuice.com/og-image.png" />
-  <meta name="twitter:title" content="Junk to Juice | We Buy Surplus Electronics in Central NC" />
-  <meta name="twitter:description" content="We purchase surplus and decommissioned electronics from businesses across central NC. Secure data destruction included." />
+  <meta name="twitter:title" content="Junk to Juice | Free Electronics Recycling Pickup in Central NC" />
+  <meta name="twitter:description" content="Free pickup of retired computers, servers and office electronics. Every drive wiped or destroyed. Nothing landfilled." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Junk to Juice",
-    "description": "We purchase surplus, decommissioned and end-of-life electronics from businesses across central North Carolina, including Sanford, the Triangle, and Fayetteville. IT hardware, lab and medical equipment, industrial controls, AV and telecom gear. Secure data destruction and serialized inventory included.",
+    "alternateName": "Junk to Juice Electronics Recycling",
+    "description": "Electronics recycler in Sanford, NC offering free pickup of retired computers, servers, network gear and office electronics for businesses across central North Carolina. Every drive wiped or physically destroyed, with certificates of destruction available. Nothing landfilled.",
     "url": "https://junktojuice.com",
     "logo": "https://junktojuice.com/android-chrome-512x512.png",
     "image": "https://junktojuice.com/og-image.png",
@@ -106,29 +106,15 @@
       "@type": "PostalAddress",
       "addressLocality": "Sanford",
       "addressRegion": "NC",
+      "postalCode": "27332",
       "addressCountry": "US"
     },
-    "areaServed": [
-      "Sanford, NC",
-      "Lee County, NC",
-      "Raleigh, NC",
-      "Cary, NC",
-      "Apex, NC",
-      "Fayetteville, NC",
-      "Fort Bragg, NC",
-      "Pinehurst, NC",
-      "Southern Pines, NC",
-      "Central North Carolina"
-    ],
-    "serviceType": [
-      "Surplus Electronics Buyer",
-      "IT Asset Disposition",
-      "Server and Network Equipment Purchasing",
-      "Laboratory and Medical Equipment Purchasing",
-      "Industrial and Test Equipment Purchasing",
-      "Secure Data Destruction",
-      "Electronics Remarketing",
-      "Electronics Recycling"
+    "openingHours": "Mo-Su 06:00-20:00",
+    "areaServed": ["Sanford, NC", "Lee County, NC", "Raleigh, NC", "Cary, NC", "Apex, NC", "Fayetteville, NC", "Fort Bragg, NC", "Pinehurst, NC", "Southern Pines, NC"],
+    "serviceType": ["Electronics Recycling", "Free Electronics Pickup", "Computer Recycling", "Secure Data Destruction", "Office IT Equipment Removal"],
+    "sameAs": [
+      "https://www.facebook.com/junktojuice",
+      "https://www.alignable.com/sanford-nc/junk-to-juice"
     ]
   }
   </script>
@@ -140,153 +126,106 @@
     gtag('js', new Date());
     gtag('config', 'G-BV7R6ZXYHS');
   </script>
-  <style>.hook{font-size:21px!important;font-weight:500!important;color:#1D9E75!important;line-height:1.35!important;margin:0 0 1rem!important;max-width:640px}.hero .hook{margin:0 auto 1rem!important}</style>
 </head>
 <body>
 
 <nav>
-  <a class="logo-mark" href="/">
-    <div class="logo-icon"><svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 3L7 15h7l-3 8L23 11h-7l3-8z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/></svg></div>
-    <span class="logo-text">Junk to <span>Juice</span></span>
-  </a>
-  <div class="nav-links">
-    <a href="/" class="active">Home</a>
-    <a href="/services">What we buy</a>
-    <a href="/data-security">Data security</a>
-    <a href="/faq">FAQ &amp; Contact</a>
-    <a class="nav-phone" href="sms:+19193463172" title="Text or email — calls go to voicemail">Text (919) 346-3172</a>
+  <div class="wrap">
+    <a class="logo-mark" href="/">
+      <div class="logo-icon"><svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 3L7 15h7l-3 8L23 11h-7l3-8z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/></svg></div>
+      <span class="logo-text">Junk to <span>Juice</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="/services">What we take</a>
+      <a href="/data-security">Data security</a>
+      <a href="/faq">FAQ</a>
+      <a class="nav-cta" href="sms:+19193463172">Text (919) 346-3172</a>
+    </div>
   </div>
 </nav>
 
-<div class="hero">
-  <div class="badge">Serving businesses across central NC</div>
-  <h1>Electronics Recycling &amp; Surplus Buyback in Sanford &amp; Central NC</h1>
-  <p class="hook">That pallet in your storage room is worth money.</p>
-  <p>We buy surplus, decommissioned and end-of-life electronics from businesses in central North Carolina — IT hardware, lab and medical equipment, industrial controls, AV and telecom gear, and plenty that fits none of those categories. You get paid for what has value, and your data never leaves with the hardware.</p>
-  <p style="font-size:14px; color:#777; margin:-1rem auto 1.75rem;">Serving businesses in Sanford, Lee County, Raleigh, Cary, Apex, Fayetteville, Fort Bragg, Pinehurst and Southern Pines.</p>
-  <div class="cta-row">
-    <a class="btn-primary" href="/faq#contact">Get a quote on your surplus</a>
-    <a class="btn-secondary" href="sms:+19193463172">Text us photos: (919) 346-3172</a>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-label">How we're different</div>
-  <div class="section-title">Three things can happen to your equipment. Two of them pay you.</div>
-  <p class="section-lede">Most disposal vendors sort your equipment into "we'll take it" and "that'll cost you." We sort it by what it's actually worth, and you see the whole breakdown before anything moves — including an honest read on the parts that aren't worth anything.</p>
-  <div class="outcomes">
-    <div class="outcome paid">
-      <div class="outcome-tag">We pay you</div>
-      <h3>Equipment with resale value</h3>
-      <p>Servers and business laptops, network and telecom gear, lab and medical instruments, industrial controls, professional AV, unopened overstock. We make a firm offer up front — no consignment, no waiting to see what it sells for.</p>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Electronics recycling · Sanford &amp; central NC</div>
+    <h1>Free pickup for your old <span>business electronics.</span></h1>
+    <p class="lede">Retired computers, servers, network gear and office electronics, hauled away free. Every drive wiped or destroyed. Nothing landfilled.</p>
+    <div class="cta-row">
+      <a class="btn-primary" href="sms:+19193463172">Text a photo: (919) 346-3172</a>
+      <a class="btn-secondary" href="#contact">Request a pickup</a>
     </div>
-    <div class="outcome paid">
-      <div class="outcome-tag">We pay you</div>
-      <h3>Recoverable components</h3>
-      <p>Drives, memory, CPUs, GPUs, optics, cards, modules and assemblies pulled from otherwise dead equipment. A machine that won't power on still often has real value sitting inside it.</p>
-    </div>
-    <div class="outcome">
-      <div class="outcome-tag grey">Case by case</div>
-      <h3>Material with no market</h3>
-      <p>CRTs, dead consumer gear, mixed cable, obsolete equipment nobody wants. Where it's a reasonable share of an otherwise good lot, it rides along at no charge. Where a load is mostly this, we may quote a handling fee or pass on it — and we'll say so before we schedule, not at the dock.</p>
-    </div>
+    <p class="homes">Clearing out a home? Text a photo. We take household electronics too.</p>
   </div>
-</div>
+</header>
 
-<div class="section">
-  <div class="section-label">The process</div>
-  <div class="section-title">From asset list to payment</div>
-  <div class="steps">
-    <div class="step-card"><div class="step-num">1</div><h3>Send us what you have</h3><p>An asset list, a spreadsheet export, or just photos. If the lot is large, mixed, or awkward to describe, ask and we'll arrange a site visit and walk it with you instead.</p></div>
-    <div class="step-card"><div class="step-num">2</div><h3>We make an offer</h3><p>Usually within one business day. Itemized, so you can see what's driving the number and take it to your finance team.</p></div>
-    <div class="step-card"><div class="step-num">3</div><h3>We collect and document</h3><p>Serialized inventory captured at your site before anything is loaded. You keep a copy of the manifest.</p></div>
-    <div class="step-card"><div class="step-num">4</div><h3>Data destroyed, you get paid</h3><p>Drives are sanitized or destroyed to your spec. Payment on pickup, or after verification for larger lots — your choice.</p></div>
+<section class="points" aria-label="Why Junk to Juice">
+  <div class="wrap">
+    <div class="point"><h2>Free pickup</h2><p>From one closet to a whole floor, on your schedule.</p></div>
+    <div class="point"><h2>Your data, handled</h2><p>Every drive wiped or physically destroyed. Certificate of destruction on request.</p></div>
+    <div class="point"><h2>Never landfilled</h2><p>Reused, parted out or recycled. If anything has resale value, we'll make an offer.</p></div>
   </div>
-</div>
+</section>
 
-<div class="section">
-  <div class="section-label">When this comes up</div>
-  <div class="section-title">Most of our conversations start the same few ways</div>
-  <p class="section-lede">If any of these sound like your situation, there's probably money in the room you weren't planning on.</p>
-  <div class="triggers">
-    <div class="trigger"><span class="dot"></span><span class="txt">A hardware refresh just landed and the old fleet is stacked in a hallway</span></div>
-    <div class="trigger"><span class="dot"></span><span class="txt">You're consolidating server rooms or moving workloads to the cloud</span></div>
-    <div class="trigger"><span class="dot"></span><span class="txt">A project got cancelled and the equipment was never deployed</span></div>
-    <div class="trigger"><span class="dot"></span><span class="txt">You're closing, merging, or downsizing an office</span></div>
-    <div class="trigger"><span class="dot"></span><span class="txt">A lease is ending and the return penalties look worse than selling</span></div>
-    <div class="trigger"><span class="dot"></span><span class="txt">A lab or clinic upgraded its instruments and the old ones are in a back room</span></div>
-    <div class="trigger"><span class="dot"></span><span class="txt">A production line was retired and the control and drive gear is still racked</span></div>
-    <div class="trigger"><span class="dot"></span><span class="txt">Spare inventory has been aging in a storage unit for years</span></div>
-    <div class="trigger"><span class="dot"></span><span class="txt">Your current recycler charges you and gives you nothing back</span></div>
-    <div class="trigger"><span class="dot"></span><span class="txt">Warranty pulls and swap-out stock have piled up past what you'll ever use</span></div>
+<section class="section">
+  <div class="wrap">
+    <h2 class="title">What we take</h2>
+    <ul class="take">
+      <li>Desktops &amp; laptops</li>
+      <li>Servers &amp; storage</li>
+      <li>Switches, routers &amp; firewalls</li>
+      <li>Monitors &amp; TVs</li>
+      <li>Printers &amp; copiers</li>
+      <li>Phones, VoIP &amp; tablets</li>
+      <li>Lab, medical &amp; AV gear</li>
+      <li>Industrial controls</li>
+      <li>Cables &amp; parts</li>
+    </ul>
+    <p class="note">Not sure about something? Send a photo and ask. <a href="/services">Full list</a></p>
   </div>
-</div>
+</section>
 
-<div class="section promise">
-  <div class="section-label">What doesn't change</div>
-  <div class="section-title">Buying your equipment raises the bar. It doesn't lower it.</div>
-  <div class="promise-grid">
-    <div class="promise-item">
-      <h3>🔒 Your data still doesn't leave with your hardware</h3>
-      <p>Reselling a device means it ends up in someone else's hands, which makes sanitization more critical, not less. Every storage device is wiped to NIST SP 800-88 standards or physically destroyed <em>before</em> a machine is tested, listed, or resold. Certificates of destruction are available on every commercial job.</p>
-    </div>
-    <div class="promise-item">
-      <h3>🌱 Nothing we collect goes to a landfill</h3>
-      <p>Everything we take is reused, harvested for parts, or routed to responsible downstream processing — including the portion we didn't pay you for. We'll document the chain on request. That commitment is also why we're honest about what we can accept: agreeing to haul material we can't responsibly handle wouldn't do anyone any favors.</p>
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <h2 class="title">How it works</h2>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div><h3>Send a photo or list</h3><p>Text or email what you have. Rough counts are fine.</p></div></div>
+      <div class="step"><div class="step-num">2</div><div><h3>We pick it up</h3><p>Free, at a time that works for you.</p></div></div>
+      <div class="step"><div class="step-num">3</div><div><h3>Data and recycling handled</h3><p>Drives wiped or destroyed, the rest recycled responsibly.</p></div></div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="section">
-  <div class="section-label">Explore</div>
-  <div class="section-title">Where to go next</div>
-  <div class="page-cards">
-    <a class="page-card" href="/services">
-      <div class="page-card-icon">💵</div>
-      <h3>What we buy</h3>
-      <p>The categories we actively pay for, what drives value, how offers are built, and what we can't take.</p>
-      <span class="arrow">View details →</span>
-    </a>
-    <a class="page-card" href="/data-security">
-      <div class="page-card-icon">🔒</div>
-      <h3>Data security &amp; compliance</h3>
-      <p>Sanitization standards, serialized inventory, certificates of destruction, and chain of custody.</p>
-      <span class="arrow">View details →</span>
-    </a>
-    <a class="page-card" href="/faq">
-      <div class="page-card-icon">💬</div>
-      <h3>FAQ &amp; Contact</h3>
-      <p>How offers work, how you get paid, and what happens to material that isn't worth anything.</p>
-      <span class="arrow">View details →</span>
-    </a>
+<section class="section about">
+  <div class="wrap">
+    <h2 class="title">Local, and easy to reach</h2>
+    <p>Junk to Juice is based in Sanford and registered with the NC Department of Environmental Quality as an electronics recycler. When you text, you reach Steve, the person who shows up for the pickup.</p>
+    <p>Serving Sanford, Lee County, Raleigh, Cary, Apex, Fayetteville, Fort Bragg, Pinehurst and Southern Pines.</p>
   </div>
-</div>
+</section>
 
-<div class="section" id="contact" style="text-align:center;">
-  <div class="section-label">Get started</div>
-  <div class="section-title">Find out what your surplus is worth</div>
-  <div class="contact-card">
-    <p>Send us your email and we'll get back to you to talk through what you have. If you already have an asset list or photos, even better — mention it and we'll follow up for them.</p>
-    <form id="contact-form" action="https://formspree.io/f/xzdyrgpk" method="POST">
-      <input type="hidden" name="_subject" value="Junk to Juice – Surplus Quote Request" />
-      <div style="display:grid; gap:10px; text-align:left;">
-        <div class="contact-row">
-          <input class="contact-input" type="text" name="name" placeholder="Your name" required />
-          <input class="contact-input" type="text" name="company" placeholder="Company" />
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <h2 class="title">Request a pickup</h2>
+    <div class="contact-card">
+      <form id="contact-form" action="https://formspree.io/f/xzdyrgpk" method="POST">
+        <input type="hidden" name="_subject" value="Junk to Juice – Pickup Request" />
+        <div style="display:grid; gap:10px;">
+          <div class="contact-row">
+            <label class="sr" style="flex:1"><span style="position:absolute;left:-9999px">Your name</span><input class="contact-input" type="text" name="name" placeholder="Your name" required /></label>
+            <label class="sr" style="flex:1"><span style="position:absolute;left:-9999px">Company (optional)</span><input class="contact-input" type="text" name="company" placeholder="Company (optional)" /></label>
+          </div>
+          <div class="contact-row">
+            <label class="sr" style="flex:1"><span style="position:absolute;left:-9999px">Email</span><input class="contact-input" type="email" name="email" placeholder="Email" required /></label>
+            <label class="sr" style="flex:1"><span style="position:absolute;left:-9999px">Phone (optional)</span><input class="contact-input" type="tel" name="phone" placeholder="Phone (optional)" /></label>
+          </div>
+          <label><span style="position:absolute;left:-9999px">What do you have, and where?</span><textarea class="contact-input" name="message" rows="3" placeholder="What do you have, and what city? (e.g. 20 laptops and 2 servers, Sanford)" style="resize:vertical;"></textarea></label>
+          <button type="submit" class="btn-primary" id="contact-btn">Request pickup</button>
         </div>
-        <div class="contact-row">
-          <input class="contact-input" type="email" name="email" placeholder="your@company.com" required />
-          <input class="contact-input" type="tel" name="phone" placeholder="Phone (optional)" />
-        </div>
-        <textarea class="contact-input" name="message" rows="3" placeholder="What do you have? (e.g. 20 laptops, 2 servers, a pallet of lab equipment) — and your city" style="resize:vertical;"></textarea>
-        <button type="submit" class="btn-primary" id="contact-btn">Request a quote</button>
-      </div>
-    </form>
-    <p id="contact-success" style="display:none; color:#0F6E56; font-size:14px; margin-top:12px;">✓ Thanks! We'll be in touch soon.</p>
-    <p style="margin-top:1rem; font-size:13px; color:#888;">Rather text? Send a few photos to <a href="sms:+19193463172" style="color:#1D9E75; text-decoration:none; font-weight:500;">(919) 346-3172</a>. Texts and emails get the fastest reply.</p>
-    <p style="margin-top:4px; font-size:13px; color:#888;">Or email: <a href="mailto:Steve@junktojuice.com" style="color:#1D9E75; text-decoration:none; font-weight:500;">Steve@junktojuice.com</a></p>
+      </form>
+      <p id="contact-success" style="display:none; color:#0F6E56; font-size:16px; margin-top:12px;">Thanks! We'll be in touch soon.</p>
+      <p class="contact-alt">Faster: text a photo to <a href="sms:+19193463172"><strong>(919) 346-3172</strong></a> or email <a href="mailto:Steve@junktojuice.com"><strong>Steve@junktojuice.com</strong></a>.</p>
+    </div>
   </div>
-</div>
+</section>
 
 <script>
   async function handleForm(formId, btnId, successId) {
@@ -296,12 +235,12 @@
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
       btn.disabled = true;
-      btn.textContent = 'Sending\u2026';
+      btn.textContent = 'Sending…';
       try {
         const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
         if (res.ok) { form.style.display = 'none'; success.style.display = 'block'; if (window.gtag) gtag('event', 'generate_lead', { form_id: formId }); }
-        else { btn.disabled = false; btn.textContent = btn.dataset.label; alert('Something went wrong. Please try again.'); }
-      } catch { btn.disabled = false; btn.textContent = btn.dataset.label; alert('Something went wrong. Please try again.'); }
+        else { btn.disabled = false; btn.textContent = btn.dataset.label; alert('Something went wrong. Please try again, or text (919) 346-3172.'); }
+      } catch { btn.disabled = false; btn.textContent = btn.dataset.label; alert('Something went wrong. Please try again, or text (919) 346-3172.'); }
     });
     btn.dataset.label = btn.textContent;
   }
@@ -309,12 +248,14 @@
 </script>
 
 <footer>
-  <p style="font-size:12px; color:#999; margin-bottom:4px;">Junk to Juice · Central NC · Buying surplus electronics · Secure data destruction · Nothing landfilled</p>
-  <p style="font-size:12px; color:#999;">
-    <a href="sms:+19193463172" style="color:#1D9E75; text-decoration:none;">Text (919) 346-3172</a>
-    &nbsp;·&nbsp;
-    <a href="mailto:Steve@junktojuice.com" style="color:#1D9E75; text-decoration:none;">Steve@junktojuice.com</a>
-  </p>
+  <div class="wrap">
+    <div>Junk to Juice · Electronics recycling · Sanford, NC</div>
+    <div>
+      <a href="sms:+19193463172">Text (919) 346-3172</a> ·
+      <a href="mailto:Steve@junktojuice.com">Steve@junktojuice.com</a> ·
+      <a href="https://www.facebook.com/junktojuice" rel="noopener">Facebook</a>
+    </div>
+  </div>
 </footer>
 <script>
   window.addEventListener('pageshow', function(e) {
