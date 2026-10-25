@@ -3,19 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Electronics Recycling – What We Accept & How It Works | Junk to Juice NC</title>
-  <meta name="description" content="Full list of electronics we recycle in central NC: computers, laptops, phones, TVs, servers and more. Free pickup in the Triangle, Fayetteville, and Sanford. NCDEQ certified." />
-  <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="apple-touch-icon" href="/favicon.png">
-<link rel="canonical" href="https://junktojuice.com/services.html" />
-<meta name="robots" content="index, follow" />
-
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://junktojuice.com/services.html" />
-<meta property="og:title" content="Electronics Recycling – What We Accept | Junk to Juice NC" />
-<meta property="og:description" content="Full list of electronics we recycle in central NC: computers, laptops, phones, TVs, servers and more. Free pickup in the Triangle, Fayetteville, and Sanford." />
-<meta property="og:site_name" content="Junk to Juice" />
+  <title>What We Buy | Surplus Electronics Purchasing | Junk to Juice</title>
+  <meta name="description" content="We purchase surplus electronics from businesses in central NC — IT hardware, lab and medical equipment, industrial controls, AV, telecom and components. See what has value and how offers work." />
+  <link rel="canonical" href="https://junktojuice.com/services" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.7; }
@@ -30,28 +24,48 @@
     .nav-links a:hover, .nav-links a.active { color: #1D9E75; font-weight: 500; }
     .nav-phone { font-size: 14px; color: #1D9E75; text-decoration: none; font-weight: 500; }
     .page-hero { padding: 3rem 2rem 2.5rem; border-bottom: 0.5px solid #e0e0e0; }
-    .page-hero .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
-    .page-hero h1 { font-size: 30px; font-weight: 500; color: #1a1a1a; line-height: 1.25; margin-bottom: 0.75rem; }
-    .page-hero p { font-size: 15px; color: #555; max-width: 560px; line-height: 1.7; }
+    .page-hero .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; margin-bottom: 0.5rem; }
+    .page-hero h1 { font-size: 30px; font-weight: 500; color: #1a1a1a; line-height: 1.25; margin-bottom: 0.75rem; max-width: 640px; }
+    .page-hero p { font-size: 15px; color: #555; max-width: 600px; line-height: 1.7; }
     .section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; }
-    .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
-    .section-title { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 2rem; }
-    .option-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 1.5rem; }
-    .option-card { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 1.25rem; }
-    .option-icon { width: 36px; height: 36px; border-radius: 8px; background: #E1F5EE; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
-    .option-card h3 { font-size: 15px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
-    .option-card p { font-size: 13px; color: #555; line-height: 1.6; }
-    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+    .section-label { font-size: 12px; font-weight: 500; color: #1D9E75; margin-bottom: 0.5rem; }
+    .section-title { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 0.75rem; }
+    .section-lede { font-size: 14.5px; color: #555; max-width: 620px; line-height: 1.7; margin-bottom: 1.75rem; }
+
+    /* Value tiers */
+    .tier { border-radius: 12px; padding: 1.75rem; margin-bottom: 1.25rem; }
+    .tier-1 { border: 1px solid #1D9E75; background: #F6FCFA; }
+    .tier-2 { border: 0.5px solid #e0e0e0; }
+    .tier-3 { border: 0.5px solid #e0e0e0; background: #f7f7f5; }
+    .tier-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 0.5rem; }
+    .tier-head h2 { font-size: 18px; font-weight: 500; }
+    .tier-pay { font-size: 12px; font-weight: 500; border-radius: 6px; padding: 3px 10px; }
+    .pay-strong { background: #1D9E75; color: #fff; }
+    .pay-mid { background: #E1F5EE; color: #0F6E56; }
+    .pay-none { background: #e8e8e6; color: #666; }
+    .tier > p.desc { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 1.25rem; max-width: 620px; }
+    .items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(185px, 1fr)); gap: 10px; }
+    .item-chip { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #555; display: flex; align-items: center; gap: 8px; }
+    .tier-3 .item-chip { background: #fff; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: #1D9E75; flex-shrink: 0; }
+    .tier-3 .dot { background: #bbb; }
+
+    /* Value factors */
+    .factors { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 1.5rem; }
+    .factor h3 { font-size: 15px; font-weight: 500; margin-bottom: 6px; }
+    .factor p { font-size: 13.5px; color: #555; line-height: 1.65; }
+
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 1.5rem; }
     .step-card { background: #f7f7f5; border-radius: 12px; padding: 1.25rem; }
     .step-num { width: 32px; height: 32px; border-radius: 50%; background: #E1F5EE; color: #0F6E56; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; margin-bottom: 1rem; }
     .step-card h3 { font-size: 15px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
     .step-card p { font-size: 13px; color: #555; line-height: 1.6; }
-    .cat-label { font-size: 11px; font-weight: 500; color: #0F6E56; text-transform: uppercase; letter-spacing: 0.06em; margin: 1.5rem 0 0.75rem; }
-    .items-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
-    .item-chip { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #555; display: flex; align-items: center; gap: 8px; }
-    .dot { width: 7px; height: 7px; border-radius: 50%; background: #1D9E75; flex-shrink: 0; }
+
+    .callout { background: #F6FCFA; border-left: 3px solid #1D9E75; border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem; margin-top: 1.5rem; max-width: 680px; }
+    .callout p { font-size: 14px; color: #444; line-height: 1.7; }
+
     .notsure-section { padding: 3rem 2rem; border-bottom: 0.5px solid #e0e0e0; background: #f7f7f5; }
-    .notsure-inner { max-width: 700px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+    .notsure-inner { max-width: 760px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
     .notsure-text h2 { font-size: 22px; font-weight: 500; color: #1a1a1a; margin-bottom: 0.75rem; }
     .notsure-text p { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 1.25rem; }
     .notsure-examples { display: flex; flex-direction: column; gap: 8px; }
@@ -68,132 +82,196 @@
     .ask-card .btn-primary { width: 100%; text-align: center; }
     footer { padding: 1.5rem 2rem; text-align: center; border-top: 0.5px solid #e0e0e0; }
     footer p { font-size: 12px; color: #999; }
-    @media (max-width: 560px) { .notsure-inner { grid-template-columns: 1fr; } nav { justify-content: center; } }
+    @media (max-width: 560px) { .notsure-inner { grid-template-columns: 1fr; } nav { justify-content: center; } .page-hero h1 { font-size: 25px; } }
   </style>
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://junktojuice.com/services" />
+  <meta property="og:title" content="What We Buy | Junk to Juice" />
+  <meta property="og:description" content="We purchase surplus electronics from businesses in central NC — IT, lab, medical, industrial, AV, telecom and components." />
+  <meta property="og:site_name" content="Junk to Juice" />
+  <meta property="og:image" content="https://junktojuice.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://junktojuice.com/og-image.png" />
+  <meta name="twitter:title" content="What We Buy | Junk to Juice" />
+  <meta name="twitter:description" content="We purchase surplus electronics from businesses in central NC — IT, lab, medical, industrial, AV, telecom and components." />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV7R6ZXYHS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BV7R6ZXYHS');
+  </script>
 </head>
 <body>
 
 <nav>
-  <a class="logo-mark" href="index.html">
+  <a class="logo-mark" href="/">
     <div class="logo-icon"><svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 3L7 15h7l-3 8L23 11h-7l3-8z" fill="white" stroke="white" stroke-width="0.5" stroke-linejoin="round"/></svg></div>
     <span class="logo-text">Junk to <span>Juice</span></span>
   </a>
   <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="services.html" class="active">How it works</a>
-    <a href="data-security.html">Data security</a>
-    <a href="itad.html">Asset recovery</a>
-<a href="faq.html">FAQ & Contact</a>
+    <a href="/">Home</a>
+    <a href="/services" class="active">What we buy</a>
+    <a href="/data-security">Data security</a>
+    <a href="/faq">FAQ &amp; Contact</a>
     <a class="nav-phone" href="tel:9193463172">(919) 346-3172</a>
   </div>
 </nav>
 
 <div class="page-hero">
-  <div class="section-label">How it works</div>
-  <h1>Two ways to get rid of it. Zero hassle.</h1>
-  <p>Pickup is always free in central NC. Drop-off by appointment. If it plugs in or has a battery, we probably want it — broken or not.</p>
+  <div class="section-label">What we buy</div>
+  <h1>Some of it we'll write you a check for. The rest we'll still take.</h1>
+  <p>Our scope is much broader than IT hardware. If it has a circuit board, a motor, or a power supply, it's worth asking about. Send the whole lot and we'll tell you which parts have a market, what we'll pay, and how the remainder gets handled — all in one quote.</p>
 </div>
 
-<div class="section" id="how-it-works">
-  <div class="section-label">Your options</div>
-  <div class="section-title">Two ways to get rid of it</div>
-  <div class="option-cards">
-    <div class="option-card">
-      <div class="option-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 22V12h6v10" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <h3>We come to you</h3>
-      <p>Schedule a free pickup at your home or office. We haul it away — no effort on your end.</p>
+<div class="section">
+  <div class="section-label">Value tiers</div>
+  <div class="section-title">How equipment tends to sort out</div>
+  <p class="section-lede">These are patterns, not rules. Condition, volume, generation and current market demand all move things between tiers — a single unusual item can be worth more than a pallet of common ones.</p>
+
+  <div class="tier tier-1">
+    <div class="tier-head">
+      <h2>Strong buy</h2>
+      <span class="tier-pay pay-strong">Highest offers</span>
     </div>
-    <div class="option-card">
-      <div class="option-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <h3>Drop it off</h3>
-      <p>Drop-off is available by appointment. Give us a call or send a message and we'll set a time that works — we're flexible on location for the right load.</p>
+    <p class="desc">Enterprise-grade equipment with an active secondary market. If you have this, it's worth a call before it goes anywhere else — this is where most of the value in a typical decommission sits.</p>
+    <div class="items-grid">
+      <div class="item-chip"><span class="dot"></span>Rack servers &amp; blades</div>
+      <div class="item-chip"><span class="dot"></span>Enterprise switches &amp; routers</div>
+      <div class="item-chip"><span class="dot"></span>Firewalls &amp; security appliances</div>
+      <div class="item-chip"><span class="dot"></span>SAN &amp; storage arrays</div>
+      <div class="item-chip"><span class="dot"></span>Business laptops, recent gens</div>
+      <div class="item-chip"><span class="dot"></span>Workstations &amp; GPUs</div>
+      <div class="item-chip"><span class="dot"></span>Server CPUs, RAM &amp; drives</div>
+      <div class="item-chip"><span class="dot"></span>Transceivers &amp; optics</div>
+      <div class="item-chip"><span class="dot"></span>Unopened overstock, any age</div>
+      <div class="item-chip"><span class="dot"></span>Test &amp; lab instruments</div>
+      <div class="item-chip"><span class="dot"></span>Telecom &amp; VoIP systems</div>
+      <div class="item-chip"><span class="dot"></span>Industrial controllers &amp; PLCs</div>
+      <div class="item-chip"><span class="dot"></span>Lab &amp; analytical instruments</div>
+      <div class="item-chip"><span class="dot"></span>Medical &amp; dental equipment</div>
+      <div class="item-chip"><span class="dot"></span>Broadcast &amp; professional AV</div>
+      <div class="item-chip"><span class="dot"></span>VFDs, servos &amp; motion control</div>
+      <div class="item-chip"><span class="dot"></span>Power &amp; RF test gear</div>
+    </div>
+  </div>
+
+  <div class="tier tier-2">
+    <div class="tier-head">
+      <h2>Depends on the lot</h2>
+      <span class="tier-pay pay-mid">Often pays, at volume</span>
+    </div>
+    <p class="desc">Individually these are marginal, but in quantity they add up — and they're frequently the bulk of an office cleanout. Twenty of something is a very different conversation than one of something.</p>
+    <div class="items-grid">
+      <div class="item-chip"><span class="dot"></span>Older desktops &amp; towers</div>
+      <div class="item-chip"><span class="dot"></span>Business-grade monitors</div>
+      <div class="item-chip"><span class="dot"></span>Phones &amp; tablets</div>
+      <div class="item-chip"><span class="dot"></span>Multifunction printers</div>
+      <div class="item-chip"><span class="dot"></span>UPS units &amp; PDUs</div>
+      <div class="item-chip"><span class="dot"></span>Point of sale systems</div>
+      <div class="item-chip"><span class="dot"></span>Projectors &amp; AV gear</div>
+      <div class="item-chip"><span class="dot"></span>Consumer laptops</div>
+      <div class="item-chip"><span class="dot"></span>Rack rails, PSUs &amp; spares</div>
+      <div class="item-chip"><span class="dot"></span>Commercial kitchen electronics</div>
+      <div class="item-chip"><span class="dot"></span>Fleet &amp; agricultural electronics</div>
+      <div class="item-chip"><span class="dot"></span>Security &amp; access control</div>
+      <div class="item-chip"><span class="dot"></span>Signage &amp; display systems</div>
+    </div>
+  </div>
+
+  <div class="tier tier-3">
+    <div class="tier-head">
+      <h2>No market — handled case by case</h2>
+      <span class="tier-pay pay-none">Free with a good lot</span>
+    </div>
+    <p class="desc">There's no resale or component value here, and we won't pretend otherwise. When this is a reasonable share of an otherwise valuable lot, it comes with us on the same trip at no charge — you don't have to separate it out or find somewhere else for it. When a load is mostly or entirely this material, handling it costs us real money, so we'll either quote a fee that covers that or tell you plainly we're not the right fit. Either way, you'll know before anything is scheduled. Whatever we do accept goes to responsible downstream processing, never a landfill.</p>
+    <div class="items-grid">
+      <div class="item-chip"><span class="dot"></span>CRT monitors &amp; TVs</div>
+      <div class="item-chip"><span class="dot"></span>Dead consumer electronics</div>
+      <div class="item-chip"><span class="dot"></span>Mixed cable &amp; cords</div>
+      <div class="item-chip"><span class="dot"></span>Obsolete proprietary gear</div>
+      <div class="item-chip"><span class="dot"></span>Damaged or water-affected units</div>
+      <div class="item-chip"><span class="dot"></span>Loose parts &amp; scrap boards</div>
     </div>
   </div>
 </div>
 
 <div class="section">
+  <div class="section-label">Valuation</div>
+  <div class="section-title">What actually moves the number</div>
+  <p class="section-lede">If you want a rough sense of where your lot will land before you call, these are the things we look at first.</p>
+  <div class="factors">
+    <div class="factor">
+      <h3>Generation, more than age</h3>
+      <p>A five-year-old server from a widely deployed generation can be worth more than a three-year-old orphan platform. What matters is whether anyone still runs it.</p>
+    </div>
+    <div class="factor">
+      <h3>Completeness</h3>
+      <p>Caddies, rails, power supplies, licenses and original modules meaningfully raise value. A stripped chassis is worth a fraction of a complete one.</p>
+    </div>
+    <div class="factor">
+      <h3>Volume and uniformity</h3>
+      <p>Forty identical laptops are easier to move than forty different ones, and the offer reflects that. Matched lots price better.</p>
+    </div>
+    <div class="factor">
+      <h3>Documentation</h3>
+      <p>Known provenance, service history and clean asset records reduce risk on our end, which lets us pay more on yours.</p>
+    </div>
+    <div class="factor">
+      <h3>Working vs. untested</h3>
+      <p>We buy both. Confirmed-working units carry a premium, but untested and even faulty equipment still has component value worth quoting.</p>
+    </div>
+    <div class="factor">
+      <h3>Timing</h3>
+      <p>Secondary market pricing moves. Equipment sitting in storage for three more years will almost always be worth less than it is today.</p>
+    </div>
+  </div>
+  <div class="callout">
+    <p><strong>One thing worth knowing:</strong> the single most common way businesses lose money here is by holding equipment "until we have time to deal with it." Depreciation on the secondary market is steep and continuous. If a refresh is coming, the time to get a quote is when the new gear is ordered, not a year after the old gear is unplugged.</p>
+  </div>
+</div>
+
+<div class="section">
   <div class="section-label">The process</div>
-  <div class="section-title">Simple from start to finish</div>
+  <div class="section-title">From asset list to payment</div>
   <div class="steps">
-    <div class="step-card"><div class="step-num">1</div><h3>Tell us what you have</h3><p>Send a quick message or photo. We'll confirm we can take it.</p></div>
-    <div class="step-card"><div class="step-num">2</div><h3>Pick your method</h3><p>Schedule a pickup anywhere in central NC, or arrange a drop-off by appointment — your call.</p></div>
-    <div class="step-card"><div class="step-num">3</div><h3>It gets a new life</h3><p>Working parts get reused. Everything else is responsibly recycled or reclaimed.</p></div>
+    <div class="step-card"><div class="step-num">1</div><h3>Send us what you have</h3><p>An asset list, a spreadsheet export, or photos. Model and serial info helps us price accurately, but we'll work with whatever you've got — and for large, mixed or hard-to-describe lots, just ask and we'll come walk it with you in person.</p></div>
+    <div class="step-card"><div class="step-num">2</div><h3>We make an offer</h3><p>Usually within one business day, itemized by category so you can see the reasoning and pass it up the chain internally.</p></div>
+    <div class="step-card"><div class="step-num">3</div><h3>We collect and document</h3><p>Serialized inventory is captured on site before loading. You keep a signed manifest of everything that left the building.</p></div>
+    <div class="step-card"><div class="step-num">4</div><h3>Data destroyed, you get paid</h3><p>Sanitization or physical destruction to your spec, certificates issued, and payment by check or ACH.</p></div>
+  </div>
+  <div class="callout">
+    <p><strong>When we'll say no.</strong> We'd rather be upfront than waste your time: we sometimes decline lots. Usually that's a load with essentially no recoverable value, a job where travel and labor exceed anything we could recover, material we're not equipped to handle safely, or equipment we can't establish clear ownership of. If that's your situation we'll tell you quickly and, where we can, point you toward someone better suited. A fast no is more useful to you than a slow maybe.</p>
+  </div>
+  <div class="callout">
+    <p><strong>On larger or mixed lots</strong> we can quote two ways: a firm number up front, or a settlement after everything is tested and graded. The firm offer is simpler and faster. The settlement usually nets more if the equipment turns out to be in better shape than the photos suggested. We'll tell you honestly which one we think fits your lot.</p>
   </div>
 </div>
 
-<div class="section" id="what-we-take">
-  <div class="section-label">What we accept</div>
-  <div class="section-title">If it plugs in or has a battery, we probably want it.</div>
-  <p style="font-size:14px; color:#555; max-width:560px; line-height:1.7; margin-bottom:1.5rem;">Our scope is much broader than any list could capture. The examples below are just that — examples. When in doubt, ask.</p>
-
-  <div class="cat-label">Computers & peripherals</div>
-  <div class="items-grid">
-    <div class="item-chip"><span class="dot"></span>Laptops</div>
-    <div class="item-chip"><span class="dot"></span>Desktops & towers</div>
-    <div class="item-chip"><span class="dot"></span>Monitors</div>
-    <div class="item-chip"><span class="dot"></span>Keyboards & mice</div>
-    <div class="item-chip"><span class="dot"></span>Hard drives & SSDs</div>
-    <div class="item-chip"><span class="dot"></span>RAM & components</div>
-    <div class="item-chip"><span class="dot"></span>Cables & chargers</div>
-    <div class="item-chip"><span class="dot"></span>Printers & scanners</div>
-  </div>
-
-  <div class="cat-label">Networking & enterprise</div>
-  <div class="items-grid">
-    <div class="item-chip"><span class="dot"></span>Servers & rack gear</div>
-    <div class="item-chip"><span class="dot"></span>Switches & routers</div>
-    <div class="item-chip"><span class="dot"></span>UPS battery backups</div>
-    <div class="item-chip"><span class="dot"></span>Point of sale systems</div>
-    <div class="item-chip"><span class="dot"></span>Telecom equipment</div>
-  </div>
-
-  <div class="cat-label">Mobile & consumer</div>
-  <div class="items-grid">
-    <div class="item-chip"><span class="dot"></span>Phones & tablets</div>
-    <div class="item-chip"><span class="dot"></span>Game consoles</div>
-    <div class="item-chip"><span class="dot"></span>TVs & displays</div>
-    <div class="item-chip"><span class="dot"></span>Digital cameras</div>
-    <div class="item-chip"><span class="dot"></span>GPS devices</div>
-    <div class="item-chip"><span class="dot"></span>Smart home devices</div>
-  </div>
-
-  <div class="cat-label">Audio, visual & specialty</div>
-  <div class="items-grid">
-    <div class="item-chip"><span class="dot"></span>Amplifiers & mixers</div>
-    <div class="item-chip"><span class="dot"></span>Projectors</div>
-    <div class="item-chip"><span class="dot"></span>Test & lab equipment</div>
-    <div class="item-chip"><span class="dot"></span>Medical devices</div>
-    <div class="item-chip"><span class="dot"></span>Agricultural electronics</div>
-    <div class="item-chip"><span class="dot"></span>Industrial controllers</div>
-  </div>
-
-  <p style="font-size:12px; color:#999; margin-top:1.25rem;">Not on this list? <a href="#not-sure" style="color:#1D9E75; text-decoration:none;">Just ask →</a></p>
-</div>
-
-<!-- NOT SURE -->
 <div class="notsure-section" id="not-sure">
   <div class="notsure-inner">
     <div class="notsure-text">
       <div class="section-label">Not sure?</div>
-      <h2>When in doubt, just ask</h2>
-      <p>If your item isn't on the list, don't assume we can't take it. We'd rather you reach out than toss it in the trash. Describe what you've got and we'll let you know.</p>
+      <h2>Describe it and we'll tell you straight</h2>
+      <p>You don't need to know what any of it is worth — that's our job. If we don't think there's money in it, we'll say so, and we'll still take it off your hands.</p>
       <div class="notsure-examples">
-        <div class="notsure-example"><span class="dot"></span>"I have an old piece of gym equipment with an electric display panel"</div>
-        <div class="notsure-example"><span class="dot"></span>"We're clearing out a warehouse full of mixed electronics"</div>
-        <div class="notsure-example"><span class="dot"></span>"Not sure if this old fax machine counts"</div>
-        <div class="notsure-example"><span class="dot"></span>"I have a box of random cords and parts"</div>
+        <div class="notsure-example"><span class="dot"></span>"We just decommissioned two racks and I have no idea what any of it's worth"</div>
+        <div class="notsure-example"><span class="dot"></span>"There are about 60 laptops from our last refresh sitting in a conference room"</div>
+        <div class="notsure-example"><span class="dot"></span>"We have unopened equipment from a project that got shelved in 2023"</div>
+        <div class="notsure-example"><span class="dot"></span>"We replaced our lab analyzers and the old units are in a back room"</div>
+        <div class="notsure-example"><span class="dot"></span>"Our storage unit is full and the lease is up next month"</div>
       </div>
     </div>
     <div class="ask-card">
       <p>Tell us what you have and we'll get back to you quickly — usually same day.</p>
       <form id="notsure-form" action="https://formspree.io/f/xzdyrgpk" method="POST">
-        <input type="hidden" name="_subject" value="Junk to Juice – Item Question" />
-        <textarea class="ask-textarea" name="message" placeholder="Describe your item or situation..." required></textarea>
-        <input class="contact-input" type="email" name="email" placeholder="your@email.com" style="width:100%; margin-bottom:10px;" required />
+        <input type="hidden" name="_subject" value="Junk to Juice – Surplus Enquiry" />
+        <textarea class="ask-textarea" name="message" placeholder="Roughly what do you have, and roughly how much of it?" required></textarea>
+        <input class="contact-input" type="email" name="email" placeholder="your@company.com" style="width:100%; margin-bottom:10px;" required />
         <button type="submit" class="btn-primary" id="notsure-btn">Send my question</button>
       </form>
       <p id="notsure-success" style="display:none; color:#0F6E56; font-size:13px; margin-top:10px;">✓ Got it! We'll get back to you soon.</p>
@@ -212,7 +290,7 @@
       btn.textContent = 'Sending\u2026';
       try {
         const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
-        if (res.ok) { form.style.display = 'none'; success.style.display = 'block'; }
+        if (res.ok) { form.style.display = 'none'; success.style.display = 'block'; if (window.gtag) gtag('event', 'generate_lead', { form_id: formId }); }
         else { btn.disabled = false; btn.textContent = btn.dataset.label; alert('Something went wrong. Please try again.'); }
       } catch { btn.disabled = false; btn.textContent = btn.dataset.label; alert('Something went wrong. Please try again.'); }
     });
@@ -221,6 +299,18 @@
   handleForm('notsure-form', 'notsure-btn', 'notsure-success');
 </script>
 
-<footer><p>Junk to Juice · Central NC · Responsibly recycling electronics one pickup at a time</p></footer>
+<footer>
+  <p style="font-size:12px; color:#999; margin-bottom:4px;">Junk to Juice · Central NC · Buying surplus electronics · Secure data destruction · Nothing landfilled</p>
+  <p style="font-size:12px; color:#999;">
+    <a href="tel:9193463172" style="color:#1D9E75; text-decoration:none;">(919) 346-3172</a>
+    &nbsp;·&nbsp;
+    <a href="mailto:Steve@junktojuice.com" style="color:#1D9E75; text-decoration:none;">Steve@junktojuice.com</a>
+  </p>
+</footer>
+<script>
+  window.addEventListener('pageshow', function(e) {
+    if (e.persisted) { window.location.reload(); }
+  });
+</script>
 </body>
 </html>
